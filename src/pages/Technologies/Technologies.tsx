@@ -108,10 +108,10 @@
         )
         },
 
-        // Lenguajes de Texto
-        { 
-        name: 'HTML', 
-        category: 'Lenguajes de Texto',
+        // Lenguajes de Marcado
+        {
+        name: 'HTML',
+        category: 'Lenguajes de Marcado',
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="16 18 22 12 16 6"/>
@@ -119,13 +119,55 @@
             </svg>
         )
         },
-        { 
-        name: 'XML', 
-        category: 'Lenguajes de Texto',
+        {
+        name: 'XHTML',
+        category: 'Lenguajes de Marcado',
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+            <line x1="12" y1="4" x2="12" y2="20"/>
+            </svg>
+        )
+        },
+        {
+        name: 'XML',
+        category: 'Lenguajes de Marcado',
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
             <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            </svg>
+        )
+        },
+        {
+        name: 'SVG',
+        category: 'Lenguajes de Marcado',
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="8"/>
+            <polygon points="12,6 16,14 8,14"/>
+            </svg>
+        )
+        },
+        {
+        name: 'RSS',
+        category: 'Lenguajes de Marcado',
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="6" cy="18" r="1"/>
+            <path d="M5 11a8 8 0 0 1 8 8"/>
+            <path d="M5 5a14 14 0 0 1 14 14"/>
+            </svg>
+        )
+        },
+        {
+        name: 'MathML',
+        category: 'Lenguajes de Marcado',
+        icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 18L8 6L12 18L16 6L20 18"/>
+            <line x1="3" y1="21" x2="21" y2="21"/>
             </svg>
         )
         },
@@ -322,7 +364,7 @@
                 <polyline points="8 6 2 12 8 18"/>
             </svg>
             )
-        case 'Lenguajes de Texto':
+        case 'Lenguajes de Marcado':
             return (
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -364,7 +406,7 @@
         switch (category) {
         case 'Lenguajes de Programación':
             return 'blue'
-        case 'Lenguajes de Texto':
+        case 'Lenguajes de Marcado':
             return 'green'
         case 'Diseño':
             return 'pink'

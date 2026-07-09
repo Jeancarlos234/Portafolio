@@ -32,7 +32,7 @@
             description: 'Sistema modular web con control de accesos y permisos por rol para administradores, analistas y supervisores.',
             technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -42,7 +42,7 @@
             description: 'Plataforma web para gestión de servicios con panel de cliente, administración y reportes.',
             technologies: ['React', 'Laravel', 'PostgreSQL', 'Docker', 'AWS'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -52,7 +52,7 @@
             description: 'Panel interactivo para visualización y análisis de datos empresariales con gráficos dinámicos.',
             technologies: ['React', 'TypeScript', 'Chart.js', 'Tailwind', 'REST APIs'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -62,7 +62,7 @@
             description: 'Plataforma para registro, seguimiento y gestión de órdenes de trabajo con flujo de aprobación.',
             technologies: ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -72,7 +72,7 @@
             description: 'Tienda online completa con carrito de compras, pasarela de pago y panel de administración.',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -82,7 +82,7 @@
             description: 'Plataforma de reservas con calendario interactivo, notificaciones y gestión de disponibilidad.',
             technologies: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -92,7 +92,7 @@
             description: 'Blog con sistema de gestión de contenidos, comentarios, categorías y buscador integrado.',
             technologies: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -102,7 +102,7 @@
             description: 'Plataforma para generación y gestión de facturas electrónicas con reportes financieros.',
             technologies: ['Laravel', 'React', 'MySQL', 'PDF Generator'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -112,7 +112,7 @@
             description: 'Sistema de e-learning con videos, quizzes, certificados y seguimiento de progreso.',
             technologies: ['React', 'Node.js', 'MongoDB', 'AWS S3'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -122,7 +122,7 @@
             description: 'Aplicación web para control de inventario con escaneo de códigos y alertas de stock.',
             technologies: ['React', 'Laravel', 'MySQL', 'Barcode API'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -132,7 +132,7 @@
             description: 'Sistema de gestión de empleados, asistencias, vacaciones y nóminas.',
             technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT'],
             category: 'Web',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#3b82f6'
             },
@@ -142,8 +142,7 @@
             description: 'Sitio web corporativo moderno con animaciones, formulario de contacto y blog integrado.',
             technologies: ['Next.js', 'Tailwind', 'Framer Motion', 'MDX'],
             category: 'Web',
-            githubLink: '#',
-            liveLink: '#',
+            liveLink: '/landing',
             color: '#3b82f6'
             },
 
@@ -154,7 +153,7 @@
             description: 'App móvil para registro de asistencia del personal con formularios de captura y herramientas de cálculo.',
             technologies: ['Flutter', 'Dart', 'Firebase', 'SQLite', 'GPS'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -164,7 +163,7 @@
             description: 'Aplicación móvil para administración de inventario de dispositivos con escaneo y tracking.',
             technologies: ['React Native', 'TypeScript', 'MySQL', 'REST APIs'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -174,7 +173,7 @@
             description: 'Aplicación de entregas a domicilio con seguimiento en tiempo real y notificaciones push.',
             technologies: ['Flutter', 'Firebase', 'Google Maps', 'Stripe'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -184,7 +183,7 @@
             description: 'Aplicación de mensajería instantánea con salas de chat, emojis y notificaciones.',
             technologies: ['React Native', 'Socket.io', 'Node.js', 'MongoDB'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -194,7 +193,7 @@
             description: 'Gestor de gastos e ingresos con categorías, presupuestos y reportes mensuales.',
             technologies: ['Flutter', 'SQLite', 'Charts', 'Local Notifications'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -204,7 +203,7 @@
             description: 'Aplicación de productividad con recordatorios, listas de tareas y sincronización en la nube.',
             technologies: ['React Native', 'Firebase', 'Redux', 'Push Notifications'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -214,7 +213,7 @@
             description: 'Aplicación del clima con geolocalización, pronóstico extendido y alertas meteorológicas.',
             technologies: ['Flutter', 'OpenWeather API', 'Geolocator', 'Lottie'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -224,7 +223,7 @@
             description: 'Aplicación con recetas categorizadas, búsqueda por ingredientes y modo offline.',
             technologies: ['React Native', 'SQLite', 'REST APIs', 'AsyncStorage'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -234,7 +233,7 @@
             description: 'Aplicación fitness con rutinas personalizadas, temporizador y seguimiento de progreso.',
             technologies: ['Flutter', 'Firebase', 'Health Kit', 'Animations'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -244,7 +243,7 @@
             description: 'Escáner de códigos QR y barras con historial, favoritos y generación de códigos.',
             technologies: ['React Native', 'Camera', 'SQLite', 'Share API'],
             category: 'Móvil',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#8b5cf6'
             },
@@ -256,7 +255,7 @@
             description: 'Backend robusto para registro y gestión de órdenes de trabajo con integración de bases de datos.',
             technologies: ['ASP.NET Core', 'C#', 'SQL Server', 'Swagger', 'JWT'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -266,7 +265,7 @@
             description: 'Microservicio de autenticación con JWT, OAuth2, roles y permisos granulares.',
             technologies: ['Node.js', 'Express', 'MongoDB', 'JWT', 'OAuth2'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -276,7 +275,7 @@
             description: 'Servicio de pagos con integración de múltiples pasarelas y manejo de transacciones.',
             technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Stripe', 'PayPal'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -286,7 +285,7 @@
             description: 'Sistema de notificaciones multicanal (email, SMS, push) con colas y programación.',
             technologies: ['Node.js', 'Redis', 'Bull', 'SendGrid', 'Twilio'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -296,7 +295,7 @@
             description: 'Servicio de almacenamiento de archivos con compresión, thumbnails y CDN integration.',
             technologies: ['Python', 'Django', 'AWS S3', 'CloudFront', 'Pillow'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -306,7 +305,7 @@
             description: 'Motor de búsqueda con Elasticsearch para indexación y búsqueda full-text.',
             technologies: ['Node.js', 'Elasticsearch', 'Redis', 'Docker'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -316,7 +315,7 @@
             description: 'Servicio de recolección y análisis de datos con dashboards en tiempo real.',
             technologies: ['Python', 'FastAPI', 'ClickHouse', 'Grafana', 'Redis'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -326,7 +325,7 @@
             description: 'Backend de mensajería con WebSockets, salas, presencia y persistencia de mensajes.',
             technologies: ['Node.js', 'Socket.io', 'MongoDB', 'Redis'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -336,7 +335,7 @@
             description: 'Servicio de geocodificación, rutas, distancias y puntos de interés cercanos.',
             technologies: ['Node.js', 'Express', 'PostgreSQL', 'PostGIS', 'Redis'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -346,7 +345,7 @@
             description: 'Servicio de extracción de datos web con programación de tareas y almacenamiento.',
             technologies: ['Python', 'Scrapy', 'Celery', 'PostgreSQL', 'Redis'],
             category: 'Backend',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#22c55e'
             },
@@ -358,7 +357,7 @@
             description: 'Aplicación de escritorio para gestión de tareas personales con interfaz moderna.',
             technologies: ['C#', 'WPF', '.NET', 'SQLite', 'MVVM'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -368,7 +367,7 @@
             description: 'Aplicación para crear, editar y gestionar bases de datos locales con interfaz intuitiva.',
             technologies: ['C#', 'WinForms', '.NET', 'SQL Server', 'Entity Framework'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -378,7 +377,7 @@
             description: 'Aplicación de escritorio para ventas, inventario y facturación con impresión térmica.',
             technologies: ['C#', 'WPF', 'SQL Server', 'Entity Framework', 'RDLC'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -388,7 +387,7 @@
             description: 'Procesador de texto con formato, tablas, imágenes y exportación a múltiples formatos.',
             technologies: ['C#', 'WPF', '.NET', 'RichTextBox', 'OpenXML'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -398,7 +397,7 @@
             description: 'Aplicación segura para almacenar y gestionar contraseñas con encriptación AES.',
             technologies: ['C#', 'WPF', 'SQLite', 'AES Encryption', 'MVVM'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -408,7 +407,7 @@
             description: 'Reproductor de audio y video con listas de reproducción, ecualizador y soporte de formatos.',
             technologies: ['C#', 'WPF', 'MediaElement', 'SQLite', 'FFmpeg'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -418,7 +417,7 @@
             description: 'Aplicación para administración de libros, préstamos, devoluciones y socios.',
             technologies: ['C#', 'WinForms', 'SQL Server', 'Entity Framework'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -428,7 +427,7 @@
             description: 'Calculadora científica avanzada con gráficos 2D/3D y conversiones de unidades.',
             technologies: ['C#', 'WPF', 'Math.NET', 'OxyPlot', 'MVVM'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -438,7 +437,7 @@
             description: 'Cliente de transferencia de archivos con interfaz de doble panel y cola de transferencias.',
             technologies: ['C#', 'WPF', 'SSH.NET', 'FluentFTP', 'MVVM'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -448,7 +447,7 @@
             description: 'Herramienta de monitoreo de recursos del sistema con gráficos en tiempo real y alertas.',
             technologies: ['C#', 'WPF', 'PerformanceCounters', 'LiveCharts'],
             category: 'Escritorio',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#f59e0b'
             },
@@ -460,7 +459,7 @@
             description: 'Visualizador de algoritmos de ordenamiento con animaciones y comparación de rendimiento.',
             technologies: ['C++', 'Algoritmos', 'SFML', 'Data Structures'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -470,7 +469,7 @@
             description: 'Implementación del algoritmo de Huffman para compresión y descompresión de archivos.',
             technologies: ['C++', 'Algoritmos', 'Bit Manipulation', 'File I/O'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -480,7 +479,7 @@
             description: 'Simulación de gestión de memoria virtual con algoritmos de reemplazo de páginas.',
             technologies: ['C++', 'OS Concepts', 'Algorithms', 'Visualization'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -490,7 +489,7 @@
             description: 'Intérprete para un lenguaje de programación simple con lexer, parser y ejecución.',
             technologies: ['C++', 'Compiler Design', 'AST', 'Lex/Yacc'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -500,7 +499,7 @@
             description: 'Juego de ajedrez completo con inteligencia artificial usando algoritmo Minimax.',
             technologies: ['C++', 'AI', 'Minimax', 'Alpha-Beta Pruning', 'SFML'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -510,7 +509,7 @@
             description: 'Implementación de un sistema de archivos virtual con operaciones CRUD y directorios.',
             technologies: ['C++', 'File Systems', 'Data Structures', 'Serialization'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -520,7 +519,7 @@
             description: 'Implementación básica de redes neuronales con backpropagation para clasificación.',
             technologies: ['C++', 'Machine Learning', 'Linear Algebra', 'Eigen'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             },
@@ -530,7 +529,7 @@
             description: 'Motor de juegos 2D básico con sistema de entidades, físicas y renderizado.',
             technologies: ['C++', 'OpenGL', 'GLM', 'Box2D', 'Game Engine'],
             category: 'Sistemas',
-            githubLink: '#',
+            
             liveLink: '#',
             color: '#ef4444'
             }
@@ -681,24 +680,10 @@
                     </div>
                     
                     <div className={styles.cardFooter}>
-                    {project.githubLink && (
-                        <a 
-                        href={project.githubLink} 
-                        className={styles.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        Código
-                        </a>
-                    )}
                     {project.liveLink && (
                         <a 
                         href={project.liveLink} 
                         className={styles.liveLink}
-                        target="_blank"
                         rel="noopener noreferrer"
                         >
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

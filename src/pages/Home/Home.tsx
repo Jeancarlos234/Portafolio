@@ -275,13 +275,6 @@
                 </div>
             </div>
             </div>
-            
-            <div className={styles.scrollIndicator}>
-            <div className={styles.mouse}>
-                <div className={styles.wheel}></div>
-            </div>
-            <p className={styles.scrollText}>Scroll para explorar</p>
-            </div>
         </section>
 
         {/* Stats Section */}
