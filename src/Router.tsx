@@ -10,7 +10,7 @@ import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
 
 // Landing Page Corporativa
-import LandingPage from './pages/LadingPage/LadingPage'
+import LandingPage from './pages/LadingPage/LandingPage'
 
 function App() {
   return (
