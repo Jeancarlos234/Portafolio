@@ -88,7 +88,6 @@
         }
     ]
 
-    // Proyectos Personales
     const personalProjects: Experience[] = [
         {
         id: 5,
@@ -135,22 +134,12 @@
     ]
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                setIsVisible(true)
-            }
-            })
-        },
-        { threshold: 0.1 }
-        )
+        // Pequeño retraso para asegurar que el DOM esté listo
+        const timer = setTimeout(() => {
+        setIsVisible(true)
+        }, 100)
 
-        if (sectionRef.current) {
-        observer.observe(sectionRef.current)
-        }
-
-        return () => observer.disconnect()
+        return () => clearTimeout(timer)
     }, [])
 
     const totalYears = () => {
@@ -216,7 +205,7 @@
                 <div 
                     key={exp.id} 
                     className={`${styles.timelineItem} ${isVisible ? styles.visible : ''} ${styles[exp.type]}`}
-                    style={{ animationDelay: `${index * 0.2}s` }}
+                    style={{ transitionDelay: `${index * 0.15}s` }}
                 >
                     <div className={styles.timelineDot}>
                     {exp.type === 'work' ? (
@@ -296,7 +285,7 @@
                 <div 
                     key={exp.id} 
                     className={`${styles.timelineItem} ${isVisible ? styles.visible : ''} ${styles[exp.type]}`}
-                    style={{ animationDelay: `${(experiences.length + index) * 0.15}s` }}
+                    style={{ transitionDelay: `${(experiences.length + index) * 0.1}s` }}
                 >
                     <div className={styles.timelineDot}>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
