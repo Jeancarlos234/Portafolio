@@ -10,16 +10,36 @@ import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
 
 // Landing Page Corporativa
-import LandingPage from './pages/LadingPage/LandingPage'
+import LandingPage from './pages/Web/LadingPage/LandingPage'
+
+// WeatherApp
+import WeatherApp from './pages/Web/WeatherApp/WeatherApp'
+
+// Dashboard de Visualización de Datos
+import DashboardApp from './pages/Web/DashboardApp/DashboardApp'
+
+// BlogApp
+import BlogApp from './pages/Web/BlogApp/BlogApp'
+
+import BookingsApp from './pages/Web/BookingApp/BookingApp'
+
+
 
 function App() {
   return (
     <>
       <ScrollToTop />
       <Routes>
-        {/* Landing Page SIN Layout (tiene su propio navbar y footer) */}
         <Route path="/landing" element={<LandingPage />} />
+
+        <Route path="/weather" element={<WeatherApp />} />
+
+        <Route path="/dashboard" element={<DashboardApp />} />
+
+        <Route path="/blog/*" element={<BlogApp />} />
         
+        <Route path="/bookings" element={<BookingsApp />} />
+
         {/* Páginas del portafolio CON Layout */}
         <Route path="/" element={
           <Layout>

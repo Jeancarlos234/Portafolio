@@ -1,0 +1,119 @@
+    .selector {
+    animation: fadeInUp 0.5s ease;
+    }
+
+    @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+    .title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    }
+
+    .card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    border: 1px solid #e8d5c4;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    width: 100%;
+    }
+
+    .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(139, 94, 60, 0.08);
+    border-color: #d4a574;
+    }
+
+    .cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    }
+
+    .icon {
+    font-size: 2rem;
+    }
+
+    .duration {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: #fef9f4;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+    }
+
+    .serviceName {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 6px;
+    }
+
+    .serviceDesc {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    }
+
+    .cardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #fdf0e0;
+    }
+
+    .price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #8b5e3c;
+    }
+
+    .selectBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #d4a574;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    }
+
+    .card:hover .selectBtn {
+    background: #8b5e3c;
+    box-shadow: 0 4px 12px rgba(139, 94, 60, 0.3);
+    }

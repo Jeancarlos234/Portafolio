@@ -1,0 +1,94 @@
+    .container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+
+    .customerRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    }
+
+    .customerRow:hover {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    }
+
+    .rank {
+    width: 32px;
+    text-align: center;
+    flex-shrink: 0;
+    }
+
+    .rankNumber {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #94a3b8;
+    }
+
+    .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    }
+
+    .info {
+    flex: 1;
+    min-width: 0;
+    }
+
+    .name {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    }
+
+    .email {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    }
+
+    .spent {
+    text-align: right;
+    min-width: 100px;
+    }
+
+    .amount {
+    display: block;
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.9rem;
+    }
+
+    .progressBar {
+    width: 100%;
+    height: 4px;
+    background: #f1f5f9;
+    border-radius: 2px;
+    margin: 4px 0;
+    overflow: hidden;
+    }
+
+    .progress {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 1s ease;
+    }
+
+    .orders {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    }

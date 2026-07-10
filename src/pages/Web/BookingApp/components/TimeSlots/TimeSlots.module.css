@@ -1,0 +1,70 @@
+    .timeSlots {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    border: 1px solid #e8d5c4;
+    }
+
+    .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    }
+
+    .section {
+    margin-bottom: 20px;
+    }
+
+    .section:last-child {
+    margin-bottom: 0;
+    }
+
+    .periodLabel {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 8px;
+    }
+
+    .slot {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #e8d5c4;
+    background: #ffffff;
+    color: #475569;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-align: center;
+    }
+
+    .slot:hover:not(:disabled) {
+    border-color: #d4a574;
+    color: #8b5e3c;
+    background: #fdf0e0;
+    }
+
+    .selected {
+    background: #8b5e3c !important;
+    color: #ffffff !important;
+    border-color: #8b5e3c !important;
+    font-weight: 600;
+    }
+
+    .unavailable {
+    opacity: 0.35;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    }

@@ -1,0 +1,270 @@
+    .tableContainer {
+    width: 100%;
+    }
+
+    .tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    }
+
+    .tableActions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    }
+
+    .searchBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    color: #94a3b8;
+    }
+
+    .searchInput {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.85rem;
+    color: #334155;
+    width: 160px;
+    }
+
+    .searchInput::placeholder {
+    color: #94a3b8;
+    }
+
+    .statusSelect,
+    .rowsSelect {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
+    font-size: 0.82rem;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    }
+
+    .exportBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    }
+
+    .exportBtn:hover {
+    background: #f8fafc;
+    color: #3b82f6;
+    border-color: #bfdbfe;
+    }
+
+    .tableWrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    }
+
+    .table th {
+    background: #f8fafc;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+    }
+
+    .sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+    }
+
+    .sortable:hover {
+    color: #3b82f6;
+    }
+
+    .table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    }
+
+    .tableRow {
+    transition: background 0.2s;
+    }
+
+    .tableRow:hover {
+    background: #f8fafc;
+    }
+
+    .orderId {
+    font-weight: 600;
+    color: #3b82f6;
+    font-family: monospace;
+    }
+
+    .customerCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .customerAvatar {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+    }
+
+    .customerName {
+    font-weight: 600;
+    color: #1e293b;
+    }
+
+    .customerEmail {
+    font-size: 0.78rem;
+    color: #94a3b8;
+    }
+
+    .amount {
+    font-weight: 700;
+    color: #1e293b;
+    }
+
+    .date {
+    white-space: nowrap;
+    color: #64748b;
+    }
+
+    .status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    white-space: nowrap;
+    }
+
+    .statusCompleted {
+    background: #f0fdf4;
+    color: #16a34a;
+    }
+
+    .statusPending {
+    background: #fffbeb;
+    color: #d97706;
+    }
+
+    .statusProcessing {
+    background: #eff6ff;
+    color: #2563eb;
+    }
+
+    .statusCancelled {
+    background: #fef2f2;
+    color: #dc2626;
+    }
+
+    /* Footer */
+    .tableFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    }
+
+    .showingResults {
+    font-size: 0.82rem;
+    color: #64748b;
+    }
+
+    .pagination {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    }
+
+    .pageBtn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    }
+
+    .pageBtn:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #bfdbfe;
+    color: #3b82f6;
+    }
+
+    .pageBtn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    }
+
+    .activePage {
+    background: #3b82f6 !important;
+    color: #ffffff !important;
+    border-color: #3b82f6 !important;
+    }
+
+    @media (max-width: 768px) {
+    .tableHeader {
+        flex-direction: column;
+    }
+    
+    .tableActions {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .searchBox {
+        width: 100%;
+    }
+    
+    .searchInput {
+        width: 100%;
+    }
+    }

@@ -33,7 +33,7 @@
             technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/gestion',
             color: '#3b82f6'
             },
             {
@@ -43,7 +43,7 @@
             technologies: ['React', 'Laravel', 'PostgreSQL', 'Docker', 'AWS'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/servicios',
             color: '#3b82f6'
             },
             {
@@ -53,7 +53,7 @@
             technologies: ['React', 'TypeScript', 'Chart.js', 'Tailwind', 'REST APIs'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/dashboard',
             color: '#3b82f6'
             },
             {
@@ -63,7 +63,7 @@
             technologies: ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/ordenes',
             color: '#3b82f6'
             },
             {
@@ -73,7 +73,7 @@
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/ecommerce',
             color: '#3b82f6'
             },
             {
@@ -83,7 +83,7 @@
             technologies: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/bookings',
             color: '#3b82f6'
             },
             {
@@ -93,7 +93,7 @@
             technologies: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/blog',
             color: '#3b82f6'
             },
             {
@@ -103,7 +103,7 @@
             technologies: ['Laravel', 'React', 'MySQL', 'PDF Generator'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/facturacion',
             color: '#3b82f6'
             },
             {
@@ -113,7 +113,7 @@
             technologies: ['React', 'Node.js', 'MongoDB', 'AWS S3'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/cursos',
             color: '#3b82f6'
             },
             {
@@ -123,7 +123,7 @@
             technologies: ['React', 'Laravel', 'MySQL', 'Barcode API'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/inventario',
             color: '#3b82f6'
             },
             {
@@ -133,7 +133,7 @@
             technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT'],
             category: 'Web',
             
-            liveLink: '#',
+            liveLink: '/recursos-humanos',
             color: '#3b82f6'
             },
             {
@@ -214,7 +214,7 @@
             technologies: ['Flutter', 'OpenWeather API', 'Geolocator', 'Lottie'],
             category: 'Móvil',
             
-            liveLink: '#',
+            liveLink: '/weather',
             color: '#8b5cf6'
             },
             {

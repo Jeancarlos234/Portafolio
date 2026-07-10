@@ -1,0 +1,160 @@
+    .chartContainer {
+    width: 100%;
+    }
+
+    /* Bar Chart */
+    .barChart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 250px;
+    padding: 20px 0;
+    gap: 4px;
+    }
+
+    .barGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    }
+
+    .barValue {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #64748b;
+    opacity: 0;
+    transition: opacity 0.3s;
+    }
+
+    .barGroup:hover .barValue {
+    opacity: 1;
+    }
+
+    .barWrapper {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    }
+
+    .bar {
+    width: 70%;
+    border-radius: 6px 6px 0 0;
+    transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 4px;
+    }
+
+    .barGroup:hover .bar {
+    filter: brightness(1.1);
+    }
+
+    .barLabel {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+    }
+
+    /* Donut Chart */
+    .donutChart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    }
+
+    .donutCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    .donutValue {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    }
+
+    .donutLabel {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    }
+
+    .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    }
+
+    .legendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .legendColor {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    }
+
+    .legendName {
+    flex: 1;
+    font-size: 0.85rem;
+    color: #475569;
+    }
+
+    .legendValue {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.85rem;
+    }
+
+    /* Area Chart */
+    .areaChart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    padding: 20px 0;
+    gap: 4px;
+    }
+
+    .areaGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+    }
+
+    .areaBars {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3px;
+    }
+
+    .areaBar {
+    width: 40%;
+    border-radius: 4px 4px 0 0;
+    transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 4px;
+    }
+
+    .chartLegend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    }

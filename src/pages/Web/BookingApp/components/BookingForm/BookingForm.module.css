@@ -1,0 +1,232 @@
+    .formContainer {
+    max-width: 650px;
+    margin: 0 auto;
+    animation: fadeInUp 0.5s ease;
+    }
+
+    @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    .summary {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px 24px;
+    border: 1px solid #e8d5c4;
+    margin-bottom: 24px;
+    }
+
+    .summaryHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #fdf0e0;
+    }
+
+    .serviceIcon {
+    font-size: 1.8rem;
+    }
+
+    .serviceName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    }
+
+    .servicePrice {
+    font-size: 0.9rem;
+    color: #8b5e3c;
+    font-weight: 600;
+    }
+
+    .summaryDetails {
+    display: flex;
+    gap: 24px;
+    }
+
+    .summaryItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.9rem;
+    }
+
+    .summaryItem svg {
+    color: #8b5e3c;
+    }
+
+    .form {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid #e8d5c4;
+    }
+
+    .formTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 22px;
+    }
+
+    .formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    }
+
+    .formGroup {
+    margin-bottom: 18px;
+    }
+
+    .label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+    }
+
+    .inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    }
+
+    .inputWrapper svg {
+    position: absolute;
+    left: 14px;
+    color: #94a3b8;
+    pointer-events: none;
+    transition: color 0.2s;
+    }
+
+    .inputWrapper:focus-within svg {
+    color: #8b5e3c;
+    }
+
+    .inputWrapper.error {
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px #fecaca;
+    }
+
+    .input {
+    width: 100%;
+    padding: 11px 16px 11px 42px;
+    border: 1px solid #e8d5c4;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    font-family: inherit;
+    background: #fef9f4;
+    color: #334155;
+    transition: all 0.2s;
+    }
+
+    .input:focus {
+    outline: none;
+    border-color: #8b5e3c;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.08);
+    }
+
+    .input::placeholder {
+    color: #94a3b8;
+    }
+
+    .textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e8d5c4;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+    background: #fef9f4;
+    color: #334155;
+    transition: all 0.2s;
+    }
+
+    .textarea:focus {
+    outline: none;
+    border-color: #8b5e3c;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.08);
+    }
+
+    .textarea::placeholder {
+    color: #94a3b8;
+    }
+
+    .errorText {
+    display: block;
+    color: #ef4444;
+    font-size: 0.78rem;
+    margin-top: 4px;
+    font-weight: 500;
+    }
+
+    .buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 8px;
+    }
+
+    .cancelBtn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 1px solid #e8d5c4;
+    background: #ffffff;
+    color: #64748b;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    }
+
+    .cancelBtn:hover {
+    background: #fef9f4;
+    }
+
+    .submitBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: none;
+    background: #d4a574;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-family: inherit;
+    }
+
+    .submitBtn:hover {
+    background: #8b5e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 94, 60, 0.3);
+    }
+
+    @media (max-width: 500px) {
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .buttons {
+        flex-direction: column-reverse;
+    }
+    
+    .summaryDetails {
+        flex-direction: column;
+        gap: 8px;
+    }
+    }

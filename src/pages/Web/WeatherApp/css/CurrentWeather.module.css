@@ -1,0 +1,115 @@
+    .currentWeather {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    }
+
+    .topSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    }
+
+    .locationInfo {
+    text-align: left;
+    }
+
+    .locationRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    }
+
+    .cityName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .conditionLabel {
+    display: inline-block;
+    padding: 4px 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+    .weatherIcon {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    }
+
+    .tempSection {
+    margin-bottom: 1rem;
+    }
+
+    .mainTemp {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    }
+
+    .tempValue {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .tempUnit {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0.5rem;
+    }
+
+    .tempRange {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    }
+
+    .highTemp, .lowTemp {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    }
+
+    .description {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+    font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+    .tempValue {
+        font-size: 3.5rem;
+    }
+    
+    .weatherIcon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .cityName {
+        font-size: 1.2rem;
+    }
+    }
