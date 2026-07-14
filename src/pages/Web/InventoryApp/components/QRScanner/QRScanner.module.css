@@ -1,0 +1,72 @@
+    .scanner {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 24px;
+    }
+
+    .scannerHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    }
+
+    .scannerIcon {
+    width: 52px; height: 52px;
+    background: #f1f5f9; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    color: #1e293b;
+    }
+
+    .scannerTitle {
+    font-size: 1.1rem; font-weight: 700; color: #1e293b;
+    }
+    .scannerSubtitle {
+    font-size: 0.85rem; color: #94a3b8;
+    }
+
+    .scannerInput {
+    display: flex; gap: 10px;
+    }
+
+    .input {
+    flex: 1; padding: 11px 16px;
+    border: 1px solid #e5e5e5; border-radius: 10px;
+    font-size: 0.95rem; font-family: inherit;
+    }
+    .input:focus { outline: none; border-color: #1e293b; }
+
+    .scanBtn {
+    display: flex; align-items: center; gap: 8px;
+    padding: 11px 20px; border-radius: 10px;
+    border: none; background: #1e293b; color: #ffffff;
+    font-weight: 600; cursor: pointer; font-family: inherit;
+    transition: all 0.2s; white-space: nowrap;
+    }
+    .scanBtn:hover:not(:disabled) { background: #334155; }
+    .scanBtn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+    .spinner {
+    width: 16px; height: 16px;
+    border: 2px solid #ffffff; border-top-color: transparent;
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 12px; padding: 10px 14px;
+    background: #fef2f2; border-radius: 8px;
+    color: #dc2626; font-size: 0.88rem; font-weight: 500;
+    }
+
+    .result {
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 12px; padding: 12px 14px;
+    background: #f0fdf4; border-radius: 8px;
+    color: #16a34a; font-size: 0.88rem;
+    }
+    .result div { display: flex; flex-direction: column; gap: 2px; }
+    .result span { font-size: 0.8rem; color: #64748b; }

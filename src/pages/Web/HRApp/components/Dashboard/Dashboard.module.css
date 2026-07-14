@@ -1,0 +1,33 @@
+    .dashboard { animation: fadeIn 0.4s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .header { margin-bottom: 28px; }
+    .title { font-size: 1.75rem; font-weight: 700; color: #1e293b; }
+    .subtitle { color: #94a3b8; font-size: 0.95rem; margin-top: 4px; }
+
+    .kpiGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-bottom: 28px; }
+    .kpiCard { display: flex; align-items: center; gap: 16px; padding: 22px 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e5e5e5; animation: fadeIn 0.5s ease both; transition: all 0.2s; }
+    .kpiCard:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
+    .kpiIcon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .kpiValue { display: block; font-size: 1.5rem; font-weight: 700; color: #1e293b; }
+    .kpiLabel { display: block; font-size: 0.85rem; color: #64748b; }
+    .kpiSubtitle { font-size: 0.78rem; color: #94a3b8; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .section { background: #ffffff; border-radius: 16px; padding: 24px; border: 1px solid #e5e5e5; }
+    .sectionTitle { font-size: 1.1rem; font-weight: 700; color: #1e293b; margin-bottom: 18px; }
+
+    .deptList { display: flex; flex-direction: column; gap: 12px; }
+    .deptRow { display: flex; align-items: center; gap: 12px; }
+    .deptName { width: 100px; font-size: 0.85rem; font-weight: 500; color: #1e293b; flex-shrink: 0; }
+    .deptCount { font-size: 0.8rem; color: #94a3b8; width: 100px; text-align: right; flex-shrink: 0; }
+    .deptBar { flex: 1; height: 6px; background: #f1f5f9; border-radius: 3px; overflow: hidden; }
+    .deptFill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+
+    .vacationList { display: flex; flex-direction: column; gap: 10px; }
+    .vacationItem { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #fefce8; border-radius: 8px; }
+    .vacationName { display: block; font-weight: 600; color: #1e293b; font-size: 0.88rem; }
+    .vacationType { font-size: 0.75rem; color: #a16207; }
+    .vacationDates { font-size: 0.78rem; color: #64748b; }
+    .empty { color: #94a3b8; font-size: 0.9rem; text-align: center; padding: 20px; }
+
+    @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }

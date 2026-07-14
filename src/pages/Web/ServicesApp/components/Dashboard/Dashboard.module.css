@@ -1,0 +1,86 @@
+    .dashboard { animation: fadeIn 0.4s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px; flex-wrap: wrap; gap: 16px; }
+    .title { font-size: 1.75rem; font-weight: 700; color: #1e293b; }
+    .subtitle { color: #94a3b8; font-size: 0.95rem; margin-top: 4px; }
+
+    .periodSelector { display: flex; gap: 4px; background: #f1f5f9; padding: 4px; border-radius: 10px; }
+    .periodBtn { padding: 7px 16px; border-radius: 8px; border: none; background: transparent; color: #64748b; font-size: 0.85rem; font-weight: 500; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+    .periodBtn:hover { color: #1e293b; }
+    .activePeriod { background: #ffffff; color: #0891b2; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+
+    /* KPIs */
+    .kpiGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-bottom: 24px; }
+    .kpiCard { display: flex; align-items: center; gap: 16px; padding: 22px 24px; background: #ffffff; border-radius: 16px; border: 1px solid #e5e5e5; animation: fadeIn 0.5s ease both; transition: all 0.2s; }
+    .kpiCard:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
+    .kpiIcon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .kpiValue { display: block; font-size: 1.5rem; font-weight: 700; color: #1e293b; }
+    .kpiLabel { display: block; font-size: 0.85rem; color: #64748b; }
+    .kpiSub { font-size: 0.75rem; color: #94a3b8; }
+
+    /* Completion */
+    .completionSection { background: #ffffff; border-radius: 16px; padding: 22px 24px; border: 1px solid #e5e5e5; margin-bottom: 24px; }
+    .completionInfo { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .completionLabel { font-size: 0.9rem; font-weight: 600; color: #475569; }
+    .completionValue { font-size: 1.3rem; font-weight: 800; color: #0891b2; }
+    .completionBar { width: 100%; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; margin-bottom: 8px; }
+    .completionFill { height: 100%; background: linear-gradient(90deg, #0891b2, #22d3ee); border-radius: 4px; transition: width 1s ease; }
+    .completionSub { font-size: 0.78rem; color: #94a3b8; }
+
+    /* Grid */
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    /* Sections */
+    .section { background: #ffffff; border-radius: 16px; padding: 24px; border: 1px solid #e5e5e5; }
+    .sectionTitle { display: flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 700; color: #1e293b; margin-bottom: 18px; }
+    .sectionTitle svg { color: #0891b2; }
+
+    /* Request Items */
+    .requestItem { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #f5f5f5; gap: 12px; flex-wrap: wrap; }
+    .requestItem:last-child { border-bottom: none; }
+    .reqInfo { flex: 1; min-width: 0; }
+    .reqName { display: block; font-weight: 600; color: #1e293b; font-size: 0.9rem; }
+    .reqService { font-size: 0.82rem; color: #64748b; }
+    .reqDate { font-size: 0.75rem; color: #94a3b8; display: block; margin-top: 2px; }
+    .reqActions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+
+    /* Status */
+    .status { padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+    .statusCompleted { background: #f0fdf4; color: #16a34a; }
+    .statusProgress { background: #eff6ff; color: #2563eb; }
+    .statusPending { background: #fffbeb; color: #d97706; }
+    .statusCancelled { background: #fef2f2; color: #dc2626; }
+    .statusSelect { padding: 4px 8px; border-radius: 4px; border: 1px solid #e5e5e5; font-size: 0.75rem; font-family: inherit; }
+
+    /* Priority */
+    .priorityBadge { padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 600; }
+    .priorityHigh { background: #fef2f2; color: #dc2626; }
+    .priorityMedium { background: #fffbeb; color: #d97706; }
+    .priorityLow { background: #f0fdf4; color: #16a34a; }
+
+    /* Top Services */
+    .topList { display: flex; flex-direction: column; gap: 14px; }
+    .topItem { display: flex; align-items: center; gap: 12px; }
+    .topRank { font-size: 0.85rem; font-weight: 700; color: #94a3b8; width: 28px; }
+    .topInfo { flex: 1; }
+    .topName { display: block; font-size: 0.88rem; font-weight: 500; color: #1e293b; margin-bottom: 4px; }
+    .topBar { width: 100%; height: 6px; background: #f1f5f9; border-radius: 3px; overflow: hidden; }
+    .topFill { height: 100%; border-radius: 3px; transition: width 0.5s; }
+    .topCount { font-size: 0.9rem; font-weight: 700; color: #0891b2; }
+
+    /* Table */
+    .tableWrapper { overflow-x: auto; }
+    .table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    .table th { background: #fafafa; padding: 12px 14px; text-align: left; font-weight: 600; color: #475569; border-bottom: 1px solid #e5e5e5; white-space: nowrap; }
+    .table td { padding: 12px 14px; border-bottom: 1px solid #f5f5f5; }
+    .tableRow:hover { background: #fafafa; }
+    .tableName { font-weight: 500; color: #1e293b; }
+    .tableDate { color: #94a3b8; white-space: nowrap; }
+
+    .empty { color: #94a3b8; padding: 20px 0; text-align: center; }
+
+    @media (max-width: 768px) { 
+    .grid { grid-template-columns: 1fr; }
+    .header { flex-direction: column; }
+    }

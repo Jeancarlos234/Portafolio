@@ -1,0 +1,319 @@
+    .dashboard {
+    animation: fadeInUp 0.5s ease;
+    }
+
+    @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+
+    .title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 4px;
+    }
+
+    .subtitle {
+    color: #64748b;
+    font-size: 0.95rem;
+    }
+
+    .createBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 26px;
+    background: #6366f1;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-family: inherit;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    }
+
+    .createBtn:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(99, 102, 241, 0.35);
+    }
+
+    /* ============ STATS GRID ============ */
+    .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    margin-bottom: 28px;
+    }
+
+    .statCard {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 26px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    animation: fadeInUp 0.5s ease both;
+    transition: all 0.3s ease;
+    }
+
+    .statCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+    border-color: #c7d2fe;
+    }
+
+    .statIcon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    }
+
+    .statInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    }
+
+    .statValue {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+    }
+
+    .statLabel {
+    font-size: 0.84rem;
+    color: #94a3b8;
+    font-weight: 500;
+    }
+
+    /* ============ FINANCIAL GRID ============ */
+    .financialGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 18px;
+    margin-bottom: 32px;
+    }
+
+    .financialCard {
+    padding: 26px 28px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    }
+
+    .financialCard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .financialHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+
+    .financialTitle {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95rem;
+    }
+
+    .financialPercent {
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+    }
+
+    .financialValue {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 14px;
+    }
+
+    .progressBar {
+    width: 100%;
+    height: 8px;
+    background: #f1f5f9;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    }
+
+    .progress {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .financialFooter {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    }
+
+    /* ============ RECENT SECTION ============ */
+    .recentSection {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .recentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    }
+
+    .recentTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    }
+
+    .viewAll {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6366f1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    }
+
+    .viewAll:hover {
+    background: #eef2ff;
+    }
+
+    .empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+    }
+
+    .empty p {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    }
+
+    .recentList {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    }
+
+    .recentItem {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: 12px;
+    transition: all 0.2s;
+    gap: 16px;
+    }
+
+    .recentItem:hover {
+    background: #f8fafc;
+    }
+
+    .recentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    }
+
+    .recentNumber {
+    font-weight: 700;
+    color: #6366f1;
+    font-size: 0.9rem;
+    }
+
+    .recentClient {
+    font-size: 0.82rem;
+    color: #64748b;
+    }
+
+    .recentDate {
+    color: #64748b;
+    font-size: 0.85rem;
+    }
+
+    .recentAmount {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95rem;
+    }
+
+    .recentStatus {
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+    }
+
+    .statusPaid { background: #f0fdf4; color: #16a34a; }
+    .statusSent { background: #eef2ff; color: #6366f1; }
+    .statusDraft { background: #f8fafc; color: #64748b; }
+    .statusCancelled { background: #fef2f2; color: #dc2626; }
+
+    @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .createBtn {
+        justify-content: center;
+    }
+    
+    .recentItem {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    
+    .financialValue {
+        font-size: 1.75rem;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recentItem {
+        grid-template-columns: 1fr;
+    }
+    }

@@ -43,7 +43,7 @@
             technologies: ['React', 'Laravel', 'PostgreSQL', 'Docker', 'AWS'],
             category: 'Web',
             
-            liveLink: '/servicios',
+            liveLink: '/services-portal',
             color: '#3b82f6'
             },
             {
@@ -73,7 +73,7 @@
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
             category: 'Web',
             
-            liveLink: '/ecommerce',
+            liveLink: '/shop',
             color: '#3b82f6'
             },
             {
@@ -113,7 +113,7 @@
             technologies: ['React', 'Node.js', 'MongoDB', 'AWS S3'],
             category: 'Web',
             
-            liveLink: '/cursos',
+            liveLink: '/courses',
             color: '#3b82f6'
             },
             {
@@ -123,7 +123,7 @@
             technologies: ['React', 'Laravel', 'MySQL', 'Barcode API'],
             category: 'Web',
             
-            liveLink: '/inventario',
+            liveLink: '/inventory',
             color: '#3b82f6'
             },
             {
@@ -133,7 +133,7 @@
             technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT'],
             category: 'Web',
             
-            liveLink: '/recursos-humanos',
+            liveLink: '/hr',
             color: '#3b82f6'
             },
             {

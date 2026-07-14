@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound/NotFound'
 import LandingPage from './pages/Web/LadingPage/LandingPage'
 
 // WeatherApp
-import WeatherApp from './pages/Web/WeatherApp/WeatherApp'
+import WeatherApp from './pages/Apps/WeatherApp/WeatherApp'
 
 // Dashboard de Visualización de Datos
 import DashboardApp from './pages/Web/DashboardApp/DashboardApp'
@@ -21,7 +21,26 @@ import DashboardApp from './pages/Web/DashboardApp/DashboardApp'
 // BlogApp
 import BlogApp from './pages/Web/BlogApp/BlogApp'
 
+// BookingApp
 import BookingsApp from './pages/Web/BookingApp/BookingApp'
+
+// Facturacion
+import FacturacionApp from './pages/Web/InvoiceApp/InvoiceApp'
+
+// E-commerce Platform
+import ShopApp from './pages/Web/ShopApp/ShopApp'
+
+// Courses Platform
+import CoursesApp from './pages/Web/CoursesApp/CoursesApp'
+
+// Inventory App
+import InventoryApp from './pages/Web/InventoryApp/InventoryApp'
+
+//RRHH
+import HRApp from './pages/Web/HRApp/HRApp'
+
+// ServicesApp
+import ServicesApp from './pages/Web/ServicesApp/ServicesApp'
 
 
 
@@ -39,6 +58,18 @@ function App() {
         <Route path="/blog/*" element={<BlogApp />} />
         
         <Route path="/bookings" element={<BookingsApp />} />
+
+        <Route path="/facturacion" element={<FacturacionApp />} />
+
+        <Route path="/shop/*" element={<ShopApp />} />
+
+        <Route path="/courses/*" element={<CoursesApp />} />
+
+        <Route path="/inventory/*" element={<InventoryApp />} />
+
+        <Route path="/hr" element={<HRApp />} />
+
+        <Route path="/services-portal" element={<ServicesApp />} />
 
         {/* Páginas del portafolio CON Layout */}
         <Route path="/" element={

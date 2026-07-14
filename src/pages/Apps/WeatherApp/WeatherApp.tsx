@@ -1,10 +1,10 @@
     import { useState, useCallback } from 'react'
     import { Link } from 'react-router-dom'
-    import SearchBar from './components/SearchBar'
-    import CurrentWeather from './components/CurrentWeather'
-    import ForecastCard from './components/ForecastCard'
-    import WeatherDetails from './components/WeatherDetails'
-    import styles from '../../../pages/Web/WeatherApp/css/WeatherApp.module.css'
+    import SearchBar from '../../../pages/Apps/WeatherApp/components/SearchBar'
+    import CurrentWeather from '../WeatherApp/components/CurrentWeather'
+    import ForecastCard from '../WeatherApp/components/ForecastCard'
+    import WeatherDetails from '../WeatherApp/components/WeatherDetails'
+    import styles from '../../../pages/Apps/WeatherApp/css/WeatherApp.module.css'
 
     const API_KEY = '71c7f44fa689f31a12cb227050980260'
 

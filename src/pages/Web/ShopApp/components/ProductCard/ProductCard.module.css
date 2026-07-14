@@ -1,0 +1,40 @@
+    .card {
+    background: #ffffff; border-radius: 16px; overflow: hidden;
+    border: 1px solid #e5e5e5; transition: all 0.3s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.06); }
+
+    .imageWrapper {
+    position: relative; height: 220px; overflow: hidden; cursor: pointer;
+    }
+    .image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .card:hover .image { transform: scale(1.04); }
+
+    .featuredBadge {
+    position: absolute; top: 12px; left: 12px;
+    padding: 4px 10px; background: #1e293b; color: #ffffff;
+    border-radius: 6px; font-size: 0.72rem; font-weight: 600;
+    }
+
+    .content { padding: 18px; }
+    .category { font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+    .name {
+    font-size: 1.05rem; font-weight: 600; color: #1e293b;
+    margin: 6px 0; cursor: pointer; transition: color 0.2s;
+    }
+    .name:hover { color: #64748b; }
+    .desc { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; margin-bottom: 12px; }
+
+    .rating { display: flex; align-items: center; gap: 4px; margin-bottom: 14px; }
+    .reviews { font-size: 0.8rem; color: #94a3b8; margin-left: 4px; }
+
+    .bottom { display: flex; justify-content: space-between; align-items: center; }
+    .price { font-size: 1.25rem; font-weight: 700; color: #1e293b; }
+
+    .addBtn {
+    width: 38px; height: 38px; border-radius: 10px;
+    border: 1px solid #e5e5e5; background: #ffffff; color: #64748b;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: all 0.2s;
+    }
+    .addBtn:hover { background: #1e293b; color: #ffffff; border-color: #1e293b; }
