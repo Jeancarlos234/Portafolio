@@ -29,12 +29,23 @@
         const hour = parseInt(checkIn.split(':')[0])
         const status = hour > 9 ? 'late' : 'present'
 
+        // ✅ Calcular horas trabajadas y horas extra
+        const checkInHour = parseInt(checkIn.split(':')[0])
+        const checkInMin = parseInt(checkIn.split(':')[1]) || 0
+        const checkOutHour = checkOut ? parseInt(checkOut.split(':')[0]) : 17
+        const checkOutMin = checkOut ? parseInt(checkOut.split(':')[1]) || 0 : 0
+        
+        const hoursWorked = checkOutHour - checkInHour + (checkOutMin - checkInMin) / 60
+        const overtime = hoursWorked > 8 ? hoursWorked - 8 : 0
+
         onAdd({
         employeeId: emp.id,
         employeeName: `${emp.firstName} ${emp.lastName}`,
         date: today,
         checkIn,
         checkOut: checkOut || '--:--',
+        hoursWorked: Math.round(hoursWorked * 10) / 10,
+        overtime: Math.round(overtime * 10) / 10,
         status,
         notes,
         })
@@ -113,19 +124,21 @@
             <h3 className={styles.sectionTitle}>Asistencia de Hoy ({todayAttendance.length})</h3>
             <div className={styles.tableWrapper}>
             <table className={styles.table}>
-                <thead><tr><th>Empleado</th><th>Entrada</th><th>Salida</th><th>Estado</th><th>Notas</th></tr></thead>
+                <thead><tr><th>Empleado</th><th>Entrada</th><th>Salida</th><th>Horas</th><th>Extra</th><th>Estado</th><th>Notas</th></tr></thead>
                 <tbody>
                 {todayAttendance.map(a => (
                     <tr key={a.id} className={styles.row}>
                     <td className={styles.empName}>{a.employeeName}</td>
                     <td>{a.checkIn}</td>
                     <td>{a.checkOut}</td>
+                    <td>{a.hoursWorked}h</td>
+                    <td>{a.overtime > 0 ? `${a.overtime}h` : '-'}</td>
                     <td><span className={`${styles.statusBadge} ${getStatusStyle(a.status)}`}>{getStatusLabel(a.status)}</span></td>
                     <td className={styles.notes}>{a.notes || '-'}</td>
                     </tr>
                 ))}
                 {todayAttendance.length === 0 && (
-                    <tr><td colSpan={5} className={styles.empty}>No hay registros hoy</td></tr>
+                    <tr><td colSpan={7} className={styles.empty}>No hay registros hoy</td></tr>
                 )}
                 </tbody>
             </table>
