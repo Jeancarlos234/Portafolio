@@ -1,0 +1,9 @@
+.app { display: flex; min-height: 100vh; background: #f1f5f9; }
+.main { flex: 1; margin-left: 260px; min-width: 0; transition: margin-left 0.3s; }
+.topBar { display: flex; justify-content: space-between; align-items: center; padding: 20px 28px; background: #ffffff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 40; }
+.pageTitle { font-size: 1.4rem; font-weight: 700; color: #1e293b; }
+.newBtn { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: #ea580c; color: #ffffff; border: none; border-radius: 10px; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.newBtn:hover { background: #c2410c; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(234,88,12,0.3); }
+.content { padding: 24px 28px; }
+
+@media (max-width: 1024px) { .main { margin-left: 0; } }

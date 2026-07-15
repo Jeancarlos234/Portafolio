@@ -1,0 +1,18 @@
+    .documents { animation: fadeIn 0.4s ease; }
+    .header { margin-bottom: 24px; }
+    .title { font-size: 1.4rem; font-weight: 700; color: #1e293b; }
+    .toolbar { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    .searchBox { display: flex; align-items: center; gap: 8px; padding: 8px 14px; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; flex: 1; min-width: 200px; }
+    .searchBox span { color: #94a3b8; }
+    .searchInput { border: none; background: transparent; outline: none; font-size: 0.85rem; font-family: inherit; width: 100%; }
+    .select { padding: 8px 14px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 0.85rem; font-family: inherit; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+    .card { display: flex; align-items: center; gap: 14px; padding: 16px; background: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; transition: all 0.2s; }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .cardIcon { width: 44px; height: 44px; background: #f8fafc; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: #6366f1; flex-shrink: 0; }
+    .cardInfo { flex: 1; min-width: 0; }
+    .cardName { display: block; font-weight: 600; color: #1e293b; font-size: 0.88rem; }
+    .cardMeta { font-size: 0.75rem; color: #94a3b8; }
+    .cardUploader { font-size: 0.7rem; color: #94a3b8; }
+    .cardCategory { padding: 4px 10px; background: #eef2ff; color: #6366f1; border-radius: 6px; font-size: 0.72rem; font-weight: 600; flex-shrink: 0; }
+    .empty { text-align: center; padding: 40px; color: #94a3b8; grid-column: 1 / -1; }

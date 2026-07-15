@@ -13,6 +13,7 @@
             { label: 'Proyectos', path: '/projects' },
             { label: 'Tecnologías', path: '/technologies' },
             { label: 'Experiencia', path: '/experience' },
+            { label: 'Certificaciones', path: '/certificates' },
             { label: 'Contacto', path: '/contact' },
         ]
         },

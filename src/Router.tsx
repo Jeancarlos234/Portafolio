@@ -42,13 +42,22 @@ import HRApp from './pages/Web/HRApp/HRApp'
 // ServicesApp
 import ServicesApp from './pages/Web/ServicesApp/ServicesApp'
 
+// WorkOrdersApp
+import WorkOrdersApp from './pages/Web/WorkOrdersApp/WorkOrdersApp'
 
+// EnterpriseApp
+import EnterpriseApp from './pages/Web/EnterpriseApp/EnterpriseApp'
+
+import TestDB from './pages/test-db'
+import CertificatesPage from './pages/Certificates/CertificatesPage'
 
 function App() {
   return (
     <>
       <ScrollToTop />
       <Routes>
+        <Route path="/test-db" element={<TestDB />} />
+
         <Route path="/landing" element={<LandingPage />} />
 
         <Route path="/weather" element={<WeatherApp />} />
@@ -70,6 +79,10 @@ function App() {
         <Route path="/hr" element={<HRApp />} />
 
         <Route path="/services-portal" element={<ServicesApp />} />
+
+        <Route path="/work-orders" element={<WorkOrdersApp />} />
+
+        <Route path="/enterprise" element={<EnterpriseApp />} />
 
         {/* Páginas del portafolio CON Layout */}
         <Route path="/" element={
@@ -95,6 +108,11 @@ function App() {
         <Route path="/experience" element={
           <Layout>
             <Experience />
+          </Layout>
+        } />
+        <Route path="/certificates" element={
+          <Layout>
+            <CertificatesPage />
           </Layout>
         } />
         <Route path="/contact" element={

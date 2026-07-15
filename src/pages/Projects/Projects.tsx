@@ -33,7 +33,7 @@
             technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
             category: 'Web',
             
-            liveLink: '/gestion',
+            liveLink: '/enterprise',
             color: '#3b82f6'
             },
             {
@@ -63,7 +63,7 @@
             technologies: ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap'],
             category: 'Web',
             
-            liveLink: '/ordenes',
+            liveLink: '/work-orders',
             color: '#3b82f6'
             },
             {

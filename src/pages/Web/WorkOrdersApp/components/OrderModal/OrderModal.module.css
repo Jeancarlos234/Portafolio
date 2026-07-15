@@ -1,0 +1,30 @@
+    .overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 20px; animation: fadeIn 0.2s; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .modal { background: #ffffff; border-radius: 20px; width: 100%; max-width: 750px; max-height: 90vh; overflow-y: auto; animation: slideUp 0.3s ease; }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .modalHeader { display: flex; justify-content: space-between; align-items: center; padding: 24px 28px; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; background: #ffffff; z-index: 1; border-radius: 20px 20px 0 0; }
+    .modalHeader h2 { font-size: 1.2rem; font-weight: 700; color: #1e293b; }
+    .closeBtn { width: 36px; height: 36px; border-radius: 8px; border: 1px solid #e2e8f0; background: #ffffff; color: #64748b; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+    .closeBtn:hover { background: #f1f5f9; }
+    .form { padding: 24px 28px; }
+    .formGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 16px; }
+    .formGroup { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .label { font-size: 0.82rem; font-weight: 600; color: #475569; }
+    .input { padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.88rem; font-family: inherit; transition: all 0.2s; background: #f8fafc; }
+    .input:focus { outline: none; border-color: #ea580c; background: #ffffff; box-shadow: 0 0 0 3px rgba(234,88,12,0.1); }
+    .textarea { width: 100%; padding: 10px 14px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.88rem; font-family: inherit; resize: vertical; transition: all 0.2s; background: #f8fafc; }
+    .textarea:focus { outline: none; border-color: #ea580c; background: #ffffff; box-shadow: 0 0 0 3px rgba(234,88,12,0.1); }
+    .formRow { display: flex; gap: 14px; }
+    .buttons { display: flex; gap: 12px; justify-content: flex-end; margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+    .cancelBtn { padding: 10px 20px; border-radius: 8px; border: 1px solid #e2e8f0; background: #ffffff; color: #64748b; font-weight: 500; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+    .cancelBtn:hover { background: #f1f5f9; }
+    .saveBtn { padding: 10px 24px; border-radius: 8px; border: none; background: #ea580c; color: #ffffff; font-weight: 600; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+    .saveBtn:hover { background: #c2410c; box-shadow: 0 4px 12px rgba(234,88,12,0.3); }
+
+    @media (max-width: 600px) {
+    .formGrid { grid-template-columns: 1fr; }
+    .formRow { flex-direction: column; }
+    .modal { max-width: 100%; border-radius: 16px; }
+    .modalHeader { padding: 18px 20px; }
+    .form { padding: 18px 20px; }
+    }
