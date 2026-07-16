@@ -434,3 +434,9 @@
     font-weight: 400;
     font-size: 0.85rem;
     }
+
+    .disabledLink {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    }
