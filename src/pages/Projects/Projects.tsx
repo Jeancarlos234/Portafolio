@@ -32,7 +32,7 @@
         description: 'Sistema modular web con control de accesos y permisos por rol para administradores, analistas y supervisores.',
         technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
         category: 'Web',
-        githubLink: '#',
+        githubLink: '/hola',
         liveLink: '/enterprise',
         color: '#3b82f6'
         },
