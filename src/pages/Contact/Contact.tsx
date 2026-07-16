@@ -53,36 +53,52 @@
     }
 
     const handleSubmit = async (e: FormEvent) => {
-        e.preventDefault()
-        
-        if (!formData.name || !formData.email || !formData.message) {
+    e.preventDefault()
+    
+    if (!formData.name || !formData.email || !formData.message) {
         setErrorMessage('Por favor, completa todos los campos requeridos')
         return
-        }
+    }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        if (!emailRegex.test(formData.email)) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(formData.email)) {
         setErrorMessage('Por favor, ingresa un email válido')
         return
-        }
+    }
 
-        setIsSubmitting(true)
-        
-        try {
-        await new Promise(resolve => setTimeout(resolve, 1500))
-        setSubmitMessage('Mensaje enviado con éxito. Te responderé pronto.')
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
+    setIsSubmitting(true)
+    
+    try {
+        // ✅ FormSubmit - Reemplaza con tu email
+        const response = await fetch('https://formsubmit.co/ajax/beltranposligua@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject || 'Sin asunto',
+            message: formData.message,
+            _subject: `Nuevo contacto del portafolio: ${formData.subject || formData.name}`,
+            _template: 'table',
+            _captcha: 'false'
         })
-        } catch (error) {
+        })
+
+        if (response.ok) {
+        setSubmitMessage('Mensaje enviado con éxito. Te responderé pronto.')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+        } else {
+        throw new Error('Error al enviar')
+        }
+    } catch (error) {
         console.error('Error al enviar el formulario:', error)
         setErrorMessage('Hubo un error al enviar el mensaje. Intenta de nuevo.')
-        } finally {
+    } finally {
         setIsSubmitting(false)
-        }
+    }
     }
 
     const contactDetails = [
