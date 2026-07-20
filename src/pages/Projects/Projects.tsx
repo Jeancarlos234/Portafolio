@@ -33,7 +33,7 @@
         technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/enterprise',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -43,7 +43,7 @@
         technologies: ['React', 'Laravel', 'PostgreSQL', 'Docker', 'AWS'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/services-portal',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -53,7 +53,7 @@
         technologies: ['React', 'TypeScript', 'Chart.js', 'Tailwind', 'REST APIs'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/dashboard',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -63,7 +63,7 @@
         technologies: ['Laravel', 'Vue.js', 'MySQL', 'Bootstrap'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/work-orders',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -73,7 +73,7 @@
         technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/shop',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -83,7 +83,7 @@
         technologies: ['React', 'Node.js', 'PostgreSQL', 'Socket.io'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/bookings',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -93,7 +93,7 @@
         technologies: ['Next.js', 'MDX', 'Tailwind', 'Vercel'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/blog',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -103,7 +103,7 @@
         technologies: ['Laravel', 'React', 'MySQL', 'PDF Generator'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/facturacion',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -113,7 +113,7 @@
         technologies: ['React', 'Node.js', 'MongoDB', 'AWS S3'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/courses',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -123,7 +123,7 @@
         technologies: ['React', 'Laravel', 'MySQL', 'Barcode API'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/inventory',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
@@ -132,8 +132,8 @@
         description: 'Sistema de gestión de empleados, asistencias, vacaciones y nóminas.',
         technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT'],
         category: 'Web',
-        githubLink: '#',
-        liveLink: '/hr',
+        githubLink: 'https://github.com/Jeancarlos234/hr-portal',
+        liveLink: 'https://hr-portal-orpin.vercel.app/',
         color: '#3b82f6'
         },
         {
@@ -143,7 +143,7 @@
         technologies: ['Next.js', 'Tailwind', 'Framer Motion', 'MDX'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/landing',
+        liveLink: '#',
         color: '#3b82f6'
         },
 
@@ -215,7 +215,7 @@
         technologies: ['Flutter', 'OpenWeather API', 'Geolocator', 'Lottie'],
         category: 'Móvil',
         githubLink: '#',
-        liveLink: '/weather',
+        liveLink: '#',
         color: '#8b5cf6'
         },
         {
@@ -680,7 +680,7 @@
                     </div>
                     
                     <div className={styles.cardFooter}>
-                    {/* ✅ Botón GitHub */}
+                    {/* Botón GitHub */}
                     {project.githubLink && project.githubLink !== '#' ? (
                         <a 
                         href={project.githubLink} 
@@ -702,7 +702,7 @@
                         </span>
                     )}
                     
-                    {/* ✅ Botón Demo */}
+                    {/* Botón Demo / Muy pronto */}
                     {project.liveLink && project.liveLink !== '#' ? (
                         <a 
                         href={project.liveLink} 
@@ -718,13 +718,12 @@
                         Demo
                         </a>
                     ) : (
-                        <span className={`${styles.liveLink} ${styles.disabledLink}`}>
+                        <span className={`${styles.liveLink} ${styles.comingSoonLink}`}>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                            <polyline points="15 3 21 3 21 9"/>
-                            <line x1="10" y1="14" x2="21" y2="3"/>
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
                         </svg>
-                        Demo
+                        Muy pronto
                         </span>
                     )}
                     </div>

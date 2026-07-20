@@ -97,6 +97,26 @@
         credentialUrl: 'https://www.udemy.com/certificate/UC-0c0fc41d-7540-4c73-a682-34040d2ad654/',
         skills: ['TypeScript', 'Desarrollo Web'],
         },
+        {
+        id: 10,
+        title: 'IA Generativa & LLM Hacking. Ciberseguridad con Claude.',
+        issuer: 'Udemy',
+        date: '2025-07-20',
+        category: 'Ciberseguridad',
+        pdfUrl: '/public/pdf/IA Generativa & LLM.pdf',
+        credentialUrl: 'https://www.udemy.com/certificate/UC-7e1327fa-3229-4f47-b0c8-bd81a847bf74/',
+        skills: ['Claude IA', 'Hacking Etico', 'Ciberseguridad', 'Modelos de lenguaje de gran tamaño (LLM)', 'Redes y Seguridad'],
+        },
+        {
+        id: 11,
+        title: 'Curso Completo de consultas de SQL con IA generativa Chatgpt',
+        issuer: 'Udemy',
+        date: '2025-07-20',
+        category: 'Bases de Datos',
+        pdfUrl: '/public/pdf/Curso Completo de consultas de SQL con IA generativa Chatgpt.pdf',
+        credentialUrl: 'https://www.udemy.com/certificate/UC-647f702a-479a-4d94-a381-e659d667679b/',
+        skills: ['SQL', 'ChatGPT', 'Administración de base de datos', 'IA Generativa (GenAI)', 'Diseño y desarrollo de bases de datos'],
+        },
     ]
 
     // ✅ Categorías corregidas
