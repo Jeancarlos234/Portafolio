@@ -132,8 +132,8 @@
         description: 'Sistema de gestión de empleados, asistencias, vacaciones y nóminas.',
         technologies: ['Angular', 'Node.js', 'PostgreSQL', 'JWT'],
         category: 'Web',
-        githubLink: 'https://github.com/Jeancarlos234/hr-portal',
-        liveLink: 'https://hr-portal-orpin.vercel.app/',
+        githubLink: '#',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
