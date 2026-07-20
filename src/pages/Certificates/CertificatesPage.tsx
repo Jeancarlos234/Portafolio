@@ -117,6 +117,16 @@
         credentialUrl: 'https://www.udemy.com/certificate/UC-647f702a-479a-4d94-a381-e659d667679b/',
         skills: ['SQL', 'ChatGPT', 'Administración de base de datos', 'IA Generativa (GenAI)', 'Diseño y desarrollo de bases de datos'],
         },
+        {
+        id: 12,
+        title: 'Mastering React and Node.js Firebase Authentication [2026]',
+        issuer: 'Udemy',
+        date: '2025-07-20',
+        category: 'Desarrollo Web',
+        pdfUrl: '/public/pdf/Mastering React and Node.js Firebase Authentication [2026].pdf',
+        credentialUrl: 'https://www.udemy.com/certificate/UC-ff7c3b87-e99a-47f3-a4e8-d7e9bf14fd1c/',
+        skills: ['Desarrollo web full stack', 'Node.js', 'React.js', 'Firebase', 'Desarrollo web'],
+        },
     ]
 
     // ✅ Categorías corregidas
