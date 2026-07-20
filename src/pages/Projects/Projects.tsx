@@ -33,7 +33,7 @@
         technologies: ['Laravel', 'React', 'MySQL', 'Bootstrap', 'REST APIs'],
         category: 'Web',
         githubLink: '#',
-        liveLink: '/enterprise',
+        liveLink: '#',
         color: '#3b82f6'
         },
         {
