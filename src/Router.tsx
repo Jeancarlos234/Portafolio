@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound/NotFound'
 
 import TestDB from './pages/test-db'
 import CertificatesPage from './pages/Certificates/CertificatesPage'
+import Services from './pages/services/Services'
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function App() {
         <Route path="/certificates" element={
           <Layout>
             <CertificatesPage />
+          </Layout>
+        } />
+        <Route path="/services" element={
+          <Layout>
+            <Services />
           </Layout>
         } />
         <Route path="/contact" element={

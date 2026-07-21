@@ -12,10 +12,10 @@
         role: 'Desarrollador Full Stack',
         location: 'Madrid, España',
         email: 'tuemail@ejemplo.com',
-        experience: '3+',
+        experience: '4+',
         projects: '50+',
-        technologies: '15+',
-        certifications: '5+'
+        technologies: '30+',
+        certifications: '10+'
     }
 
     const skillCategories = [

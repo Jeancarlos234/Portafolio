@@ -14,6 +14,7 @@
             { label: 'Tecnologías', path: '/technologies' },
             { label: 'Experiencia', path: '/experience' },
             { label: 'Certificaciones', path: '/certificates' },
+            { label: 'Servicios', path: '/services' },
             { label: 'Contacto', path: '/contact' },
         ]
         },

@@ -36,7 +36,7 @@
 
     // Función de animación de contadores (declarada antes de usarse)
     const animateCounters = () => {
-        const finalValues = [3, 50, 15, 100]
+        const finalValues = [4, 50, 15, 100]
         const duration = 2000
         const steps = 60
         const interval = duration / steps

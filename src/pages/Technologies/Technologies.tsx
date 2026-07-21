@@ -463,7 +463,7 @@
                 </div>
                 <div className={styles.heroDivider}></div>
                 <div className={styles.heroStat}>
-                <span className={styles.heroStatNumber}>5+</span>
+                <span className={styles.heroStatNumber}>4+</span>
                 <span className={styles.heroStatLabel}>Años Exp.</span>
                 </div>
             </div>
