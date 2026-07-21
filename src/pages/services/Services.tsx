@@ -128,7 +128,7 @@
         id: 1,
         name: 'Gumroad',
         description: 'La plataforma más popular para creadores. Vende productos digitales directamente a tu audiencia.',
-        logo: '/public/img/gumroad.png',
+        logo: '/img/gumroad.png',
         url: 'https://antaresjb.gumroad.com/',
         color: '#FF90E8'
         },
@@ -136,7 +136,7 @@
         id: 2,
         name: 'Envato Market',
         description: 'Marketplace líder para themes, plugins, código y assets creativos de alta calidad.',
-        logo: '/public/img/Envanto.png',
+        logo: '/img/Envanto.png',
         url: 'https://themeforest.net/user/antaresjb',
         color: '#81B441'
         },
@@ -144,7 +144,7 @@
         id: 3,
         name: 'Creative Market',
         description: 'Comunidad de diseño con fuentes, gráficos, templates y recursos creativos premium.',
-        logo: '/public/img/creative-market.png',
+        logo: '/img/creative-market.png',
         url: 'https://creativemarket.com/antaresjb',
         color: '#4BAE4F'
         },
@@ -152,7 +152,7 @@
         id: 4,
         name: 'Payhip',
         description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
-        logo: '/public/img/payhip.png',
+        logo: '/img/payhip.png',
         url: 'https://payhip.com/antaresjb',
         color: '#5B4EE4'
         },
@@ -160,7 +160,7 @@
         id: 5,
         name: 'Product Hunt',
         description: 'Plataforma para lanzar y descubrir nuevos productos digitales, apps y herramientas.',
-        logo: '/public/img/product-hunt.png',
+        logo: '/img/product-hunt.png',
         url: 'https://www.producthunt',
         color: '#DA552F'
         },
@@ -168,7 +168,7 @@
         id: 6,
         name: 'Lemonsqueezy',
         description: 'Alternativa moderna a Gumroad para vender productos digitales con excelente UX.',
-        logo: '/public/img/lemonsqueezy.png',
+        logo: '/img/lemonsqueezy.png',
         url: 'https://antaresjb.lemonsqueezy.com',
         color: '#FFC233'
         }
