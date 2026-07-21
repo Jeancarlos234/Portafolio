@@ -21,6 +21,7 @@
     logo: string
     url: string
     color: string
+    available: boolean
     }
 
     const Services = () => {
@@ -141,7 +142,7 @@
         category: 'sistemas'
         },
         {
-        id: 18,
+        id: 7,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10"/>
@@ -159,7 +160,7 @@
         category: 'ia'
         },
         {
-        id: 7,
+        id: 8,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
@@ -176,7 +177,7 @@
         category: 'cloud'
         },
         {
-        id: 8,
+        id: 9,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
@@ -192,7 +193,7 @@
         category: 'movil'
         },
         {
-        id: 9,
+        id: 10,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -209,7 +210,7 @@
         category: 'sistemas'
         },
         {
-        id: 10,
+        id: 11,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="10"/>
@@ -226,7 +227,7 @@
         category: 'web'
         },
         {
-        id: 17,
+        id: 12,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -244,7 +245,7 @@
         category: 'cloud'
         },
         {
-        id: 11,
+        id: 13,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
@@ -261,7 +262,7 @@
         category: 'sistemas'
         },
         {
-        id: 12,
+        id: 14,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="2" ry="2"/>
@@ -277,7 +278,7 @@
         category: 'juegos'
         },
         {
-        id: 13,
+        id: 15,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
@@ -293,7 +294,7 @@
         category: 'web'
         },
         {
-        id: 14,
+        id: 16,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -310,7 +311,7 @@
         category: 'ia'
         },
         {
-        id: 15,
+        id: 17,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -327,7 +328,7 @@
         category: 'sistemas'
         },
         {
-        id: 16,
+        id: 18,
         icon: (
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -340,7 +341,7 @@
         popular: false,
         deliveryTime: '8-16 semanas',
         category: 'juegos'
-        },
+        }
     ]
 
     const platforms: Platform[] = [
@@ -350,7 +351,8 @@
         description: 'La plataforma más popular para creadores. Vende productos digitales directamente a tu audiencia.',
         logo: '/img/gumroad.png',
         url: 'https://antaresjb.gumroad.com/',
-        color: '#FF90E8'
+        color: '#FF90E8',
+        available: true
         },
         {
         id: 2,
@@ -358,50 +360,53 @@
         description: 'Marketplace líder para themes, plugins, código y assets creativos de alta calidad.',
         logo: '/img/Envanto.png',
         url: 'https://themeforest.net/user/antaresjb',
-        color: '#81B441'
+        color: '#81B441',
+        available: true
         },
         {
         id: 3,
         name: 'Creative Market',
         description: 'Comunidad de diseño con fuentes, gráficos, templates y recursos creativos premium.',
         logo: '/img/creative-market.png',
-        url: 'https://creativemarket.com/antaresjb',
-        color: '#4BAE4F'
+        url: '#',
+        color: '#4BAE4F',
+        available: false
         },
         {
         id: 4,
         name: 'Payhip',
         description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
         logo: '/img/Payhip.png',
-        url: 'https://payhip.com/antaresjb',
-        color: '#5B4EE4'
+        url: '#',
+        color: '#5B4EE4',
+        available: false
         },
         {
         id: 5,
         name: 'Product Hunt',
         description: 'Plataforma para lanzar y descubrir nuevos productos digitales, apps y herramientas.',
         logo: '/img/product-hunt.png',
-        url: 'https://www.producthunt.com/@antaresjb',
-        color: '#DA552F'
+        url: '#',
+        color: '#DA552F',
+        available: false
         },
         {
         id: 6,
         name: 'Lemonsqueezy',
         description: 'Alternativa moderna a Gumroad para vender productos digitales con excelente UX.',
         logo: '/img/lemonsqueezy.png',
-        url: 'https://antaresjb.lemonsqueezy.com',
-        color: '#FFC233'
+        url: '#',
+        color: '#FFC233',
+        available: false
         }
     ]
 
-    // Filtrar servicios
     const filteredServices = activeFilter === 'todos' 
         ? services 
         : services.filter(service => service.category === activeFilter)
 
     return (
         <div className={styles.servicesPage}>
-        {/* Hero Section */}
         <section className={styles.hero}>
             <div className={styles.heroContent}>
             <span className={styles.badge}>Servicios & Productos</span>
@@ -437,11 +442,9 @@
             </div>
         </section>
 
-        {/* Services Section */}
         {activeTab === 'services' && (
             <section className={styles.servicesSection}>
             <div className={styles.container}>
-                {/* Filtros sin emojis */}
                 <div className={styles.filters}>
                 {categories.map((category) => (
                     <button
@@ -454,7 +457,6 @@
                 ))}
                 </div>
 
-                {/* Grid de servicios */}
                 <div className={styles.servicesGrid}>
                 {filteredServices.map((service) => (
                     <div 
@@ -497,7 +499,6 @@
                 ))}
                 </div>
 
-                {/* Mensaje si no hay resultados */}
                 {filteredServices.length === 0 && (
                 <div className={styles.noResults}>
                     <p>No hay servicios en esta categoría</p>
@@ -507,7 +508,6 @@
             </section>
         )}
 
-        {/* Products Section - Tiendas */}
         {activeTab === 'products' && (
             <section className={styles.productsSection}>
             <div className={styles.container}>
@@ -520,39 +520,65 @@
 
                 <div className={styles.platformsGrid}>
                 {platforms.map((platform) => (
+                    platform.available ? (
                     <a 
-                    key={platform.id}
-                    href={platform.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.platformCard}
+                        key={platform.id}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.platformCard}
                     >
-                    <div className={styles.platformIconWrapper}>
+                        <div className={styles.platformIconWrapper}>
                         <img 
-                        src={platform.logo} 
-                        alt={`${platform.name} logo`} 
-                        className={styles.platformLogo}
+                            src={platform.logo} 
+                            alt={`${platform.name} logo`} 
+                            className={styles.platformLogo}
                         />
-                    </div>
-                    
-                    <h3 className={styles.platformName}>{platform.name}</h3>
-                    <p className={styles.platformDescription}>{platform.description}</p>
+                        </div>
+                        
+                        <h3 className={styles.platformName}>{platform.name}</h3>
+                        <p className={styles.platformDescription}>{platform.description}</p>
 
-                    <div className={styles.platformButton}>
+                        <div className={styles.platformButton}>
                         Visitar tienda
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"/>
-                        <polyline points="12 5 19 12 12 19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
                         </svg>
-                    </div>
+                        </div>
                     </a>
+                    ) : (
+                    <div 
+                        key={platform.id}
+                        className={`${styles.platformCard} ${styles.platformComingSoon}`}
+                    >
+                        <div className={styles.comingSoonBadge}>Próximamente</div>
+                        <div className={styles.platformIconWrapper}>
+                        <img 
+                            src={platform.logo} 
+                            alt={`${platform.name} logo`} 
+                            className={styles.platformLogo}
+                        />
+                        </div>
+                        
+                        <h3 className={styles.platformName}>{platform.name}</h3>
+                        <p className={styles.platformDescription}>{platform.description}</p>
+
+                        <div className={styles.platformButtonDisabled}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Próximamente
+                        </div>
+                    </div>
+                    )
                 ))}
                 </div>
             </div>
             </section>
         )}
 
-        {/* CTA Section */}
         <section className={styles.cta}>
             <div className={styles.container}>
             <h2>¿No encuentras lo que buscas?</h2>
