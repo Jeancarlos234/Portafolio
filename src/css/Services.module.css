@@ -1407,3 +1407,70 @@
         padding: 24px;
     }
     }
+
+    /* Filtros */
+    .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 16px;
+    }
+
+    .filterButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    }
+
+    .filterButton:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+    border-color: #cbd5e1;
+    }
+
+    .activeFilter {
+    background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+    color: white !important;
+    border-color: #3b82f6 !important;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    }
+
+    .filterIcon {
+    font-size: 1.1rem;
+    }
+
+    .filterLabel {
+    font-weight: 600;
+    }
+
+    /* Mensaje sin resultados */
+    .noResults {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+    font-size: 1.1rem;
+    }
+
+    /* Responsive filters */
+    @media (max-width: 768px) {
+    .filters {
+        gap: 8px;
+    }
+    
+    .filterButton {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+    }
