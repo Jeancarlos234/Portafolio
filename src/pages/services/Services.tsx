@@ -152,7 +152,7 @@
         id: 4,
         name: 'Payhip',
         description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
-        logo: '/img/payhip.png',
+        logo: '/img/Payhip.png',
         url: 'https://payhip.com/antaresjb',
         color: '#5B4EE4'
         },
