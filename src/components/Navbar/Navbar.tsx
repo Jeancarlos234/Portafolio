@@ -157,7 +157,7 @@
                 ))}
                 <li className={styles.navItem}>
                 <a 
-                    href="/pdf/CV.pdf" 
+                    href="/pdf/CV Jean.pdf" 
                     className={styles.cvButton}
                     target="_blank"
                     rel="noopener noreferrer"

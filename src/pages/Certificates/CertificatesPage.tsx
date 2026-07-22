@@ -2,6 +2,20 @@
     import { useState } from 'react'
     import styles from '../../css/CertificatesPage.module.css'
 
+    // Importación de imágenes de certificados
+    import reactCourseImg from '../../assets/certificates/reactCourseImg.png'
+    import postgresqlCourseImg from '../../assets/certificates/postgresqlCourseImg.png'
+    import aiExplorerImg from '../../assets/certificates/aiExplorerImg.png'
+    import aiAssociateImg from '../../assets/certificates/aiAssociateImg.png'
+    import aiProfessionalImg from '../../assets/certificates/aiProfessionalImg.png'
+    import owaspSecurityImg from '../../assets/certificates/owaspSecurityImg.png'
+    import flaskPythonImg from '../../assets/certificates/flaskPythonImg.png'
+    import flutterflowImg from '../../assets/certificates/flutterflowImg.png'
+    import typescriptImg from '../../assets/certificates/typescriptImg.png'
+    import aiHackingImg from '../../assets/certificates/aiHackingImg.png'
+    import sqlChatgptImg from '../../assets/certificates/sqlChatgptImg.png'
+    import reactFirebaseImg from '../../assets/certificates/reactFirebaseImg.png'
+
     const CertificatesPage = () => {
     const [selectedCategory, setSelectedCategory] = useState('all')
     const [previewCert, setPreviewCert] = useState<string | null>(null)
@@ -16,6 +30,8 @@
         pdfUrl: '/pdf/Curso completo de React. Desde 0 hasta Desarrollador apps..pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-23915daa-9bcc-4422-8939-dd27c676ed0d/',
         skills: ['React', 'TypeScript', 'JavaScript', 'POO'],
+        image: reactCourseImg,
+        color: '#61DAFB'
         },
         {
         id: 2,
@@ -26,6 +42,8 @@
         pdfUrl: '/pdf/Curso Básico de PostgreSQL.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-39acad55-4b01-4305-b064-e1e8001f6ae4/',
         skills: ['PostgreSQL', 'Linux', 'Bases de Datos'],
+        image: postgresqlCourseImg,
+        color: '#336791'
         },
         {
         id: 3,
@@ -36,6 +54,8 @@
         pdfUrl: '/pdf/Curso de Certificado de Explorador en Ingeniería de IA.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-e4d382e0-0cae-475a-abe3-4aa59b222e76/',
         skills: ['Inteligencia Artificial', 'Machine Learning'],
+        image: aiExplorerImg,
+        color: '#FF6B6B'
         },
         {
         id: 4,
@@ -46,6 +66,8 @@
         pdfUrl: '/pdf/Curso de Certificación de Ingeniero Asociado en IA.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-d2909983-3bcb-4e14-8b89-431d90e84bef/',
         skills: ['Inteligencia Artificial', 'Ingeniería de Software'],
+        image: aiAssociateImg,
+        color: '#FF6B6B'
         },
         {
         id: 5,
@@ -56,6 +78,8 @@
         pdfUrl: '/pdf/Curso de Certificación Profesional en Ingenieria de IA.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-4dd67bb3-66d0-41bb-8d79-09724c892ce7/',
         skills: ['Inteligencia Artificial', 'Desarrollo'],
+        image: aiProfessionalImg,
+        color: '#FF6B6B'
         },
         {
         id: 6,
@@ -66,6 +90,8 @@
         pdfUrl: '/pdf/Seguridad en APIs.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-c1b6bf5b-a3bd-4535-a89a-e46bae3fb13b/',
         skills: ['OWASP', 'Seguridad Web', 'APIs'],
+        image: owaspSecurityImg,
+        color: '#FF4D4D'
         },
         {
         id: 7,
@@ -76,6 +102,8 @@
         pdfUrl: '/pdf/Crea aplicaciones Profesionales con Flask Python y Api Rest.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-1872ea8e-4ee4-46d3-9428-f89102ebef0f/',
         skills: ['Python', 'Flask', 'API REST'],
+        image: flaskPythonImg,
+        color: '#3776AB'
         },
         {
         id: 8,
@@ -86,6 +114,8 @@
         pdfUrl: '/pdf/Crea tus Aplicaciones sin Codigo (no code) con FlutterFlow.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-a123e926-7577-4704-89b7-9a47000ee6dd/',
         skills: ['FlutterFlow', 'No Code', 'Desarrollo Móvil'],
+        image: flutterflowImg,
+        color: '#02569B'
         },
         {
         id: 9,
@@ -96,6 +126,8 @@
         pdfUrl: '/pdf/Curso Completo de Typescript. Desde las bases a la Practica.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-0c0fc41d-7540-4c73-a682-34040d2ad654/',
         skills: ['TypeScript', 'Desarrollo Web'],
+        image: typescriptImg,
+        color: '#3178C6'
         },
         {
         id: 10,
@@ -106,6 +138,8 @@
         pdfUrl: '/pdf/IA Generativa & LLM.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-7e1327fa-3229-4f47-b0c8-bd81a847bf74/',
         skills: ['Claude IA', 'Hacking Etico', 'Ciberseguridad', 'Modelos de lenguaje de gran tamaño (LLM)', 'Redes y Seguridad'],
+        image: aiHackingImg,
+        color: '#FF4D4D'
         },
         {
         id: 11,
@@ -116,6 +150,8 @@
         pdfUrl: '/pdf/Curso Completo de consultas de SQL con IA generativa Chatgpt.pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-647f702a-479a-4d94-a381-e659d667679b/',
         skills: ['SQL', 'ChatGPT', 'Administración de base de datos', 'IA Generativa (GenAI)', 'Diseño y desarrollo de bases de datos'],
+        image: sqlChatgptImg,
+        color: '#336791'
         },
         {
         id: 12,
@@ -126,6 +162,8 @@
         pdfUrl: '/pdf/Mastering React and Node.js Firebase Authentication [2026].pdf',
         credentialUrl: 'https://www.udemy.com/certificate/UC-ff7c3b87-e99a-47f3-a4e8-d7e9bf14fd1c/',
         skills: ['Desarrollo web full stack', 'Node.js', 'React.js', 'Firebase', 'Desarrollo web'],
+        image: reactFirebaseImg,
+        color: '#61DAFB'
         },
     ]
 
@@ -192,6 +230,34 @@
         <div className={styles.grid}>
             {filtered.map(cert => (
             <div key={cert.id} className={styles.card}>
+                {/* 🖼️ Imagen del curso */}
+                <div className={styles.cardImage} style={{ backgroundColor: cert.color + '15' }}>
+                <img 
+                    src={cert.image} 
+                    alt={cert.title}
+                    className={styles.courseImage}
+                    onError={(e) => {
+                    // Fallback si la imagen no carga
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                        parent.innerHTML = `
+                        <div style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 3rem;">
+                            📜
+                        </div>
+                        `;
+                    }
+                    }}
+                />
+                <div className={styles.imageOverlay}>
+                    <button onClick={() => setPreviewCert(cert.pdfUrl)} className={styles.overlayBtn}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    Vista previa
+                    </button>
+                </div>
+                </div>
+                
                 <div className={styles.cardTop}>
                 <div className={styles.cardIcon}>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -398,6 +398,33 @@
         url: '#',
         color: '#FFC233',
         available: false
+        },
+        {
+        id: 7,
+        name: 'Codester',
+        description: 'Marketplace especializado en scripts, themes, plugins y código fuente para desarrolladores web.',
+        logo: '/img/codester.png',
+        url: '#',
+        color: '#FF6B35',
+        available: false
+        },
+        {
+        id: 8,
+        name: 'Ko-fi Shop',
+        description: 'Plataforma amigable para creadores que permite vender productos digitales y recibir donaciones sin comisiones.',
+        logo: '/img/Ko-fi.png',
+        url: '#',
+        color: '#FF5E5B',
+        available: false
+        },
+        {
+        id: 9,
+        name: 'Itch.io',
+        description: 'La plataforma indie más popular para publicar y vender juegos, assets y herramientas interactivas.',
+        logo: '/img/itch.png',
+        url: '#',
+        color: '#FA5C5C',
+        available: false
         }
     ]
 
