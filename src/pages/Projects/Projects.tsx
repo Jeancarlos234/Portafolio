@@ -50,10 +50,10 @@
         id: 3,
         title: 'Dashboard de Visualización de Datos',
         description: 'Panel interactivo para visualización y análisis de datos empresariales con gráficos dinámicos.',
-        technologies: ['React', 'TypeScript', 'Chart.js', 'Tailwind', 'REST APIs'],
+        technologies: ['React', 'TypeScript', 'Vite.js', 'Tailwind', 'License'],
         category: 'Web',
-        githubLink: '#',
-        liveLink: '#',
+        githubLink: 'https://github.com/Jeancarlos234/dashboard-empresarial',
+        liveLink: 'https://dashboard-empresarial-gamma.vercel.app',
         color: '#3b82f6'
         },
         {
