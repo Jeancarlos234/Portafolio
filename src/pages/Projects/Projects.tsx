@@ -140,7 +140,7 @@
         id: 12,
         title: 'Landing Page Corporativa',
         description: 'Sitio web corporativo moderno con animaciones, formulario de contacto y blog integrado.',
-        technologies: ['Next.js', 'Tailwind', 'Framer Motion', 'MDX'],
+        technologies: ['React.js', 'Vite.js', 'TypeScript', 'Template', 'Module.css'],
         category: 'Web',
         githubLink: '#',
         liveLink: '#',
