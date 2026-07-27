@@ -350,7 +350,7 @@
         name: 'Gumroad',
         description: 'La plataforma más popular para creadores. Vende productos digitales directamente a tu audiencia.',
         logo: '/img/gumroad.png',
-        url: 'https://antaresjb.gumroad.com/',
+        url: 'https://sydespatial.gumroad.com/',
         color: '#FF90E8',
         available: true
         },

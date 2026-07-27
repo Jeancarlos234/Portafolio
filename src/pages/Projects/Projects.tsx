@@ -140,10 +140,10 @@
         id: 12,
         title: 'Landing Page Corporativa',
         description: 'Sitio web corporativo moderno con animaciones, formulario de contacto y blog integrado.',
-        technologies: ['React.js', 'Vite.js', 'TypeScript', 'Template', 'Module.css'],
+        technologies: ['React 18', 'Vite.js', 'TypeScript', 'Template', 'CSS Modules', 'Framer Motion'],
         category: 'Web',
-        githubLink: '#',
-        liveLink: '#',
+        githubLink: 'https://github.com/Jeancarlos234/landing-corporativa',
+        liveLink: 'https://landing-corporativa.vercel.app/',
         color: '#3b82f6'
         },
 
