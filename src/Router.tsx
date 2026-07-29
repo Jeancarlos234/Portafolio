@@ -8,10 +8,11 @@ import Technologies from './pages/Technologies/Technologies'
 import Experience from './pages/Experience/Experience'
 import Contact from './pages/Contact/Contact'
 import NotFound from './pages/NotFound/NotFound'
-
 import TestDB from './pages/test-db'
 import CertificatesPage from './pages/Certificates/CertificatesPage'
 import Services from './pages/services/Services'
+import DigitalStores from './pages/shop/DigitalStores'
+
 
 function App() {
   return (
@@ -54,6 +55,11 @@ function App() {
         <Route path="/services" element={
           <Layout>
             <Services />
+          </Layout>
+        } />
+        <Route path="/shop" element={
+          <Layout>
+            <DigitalStores />
           </Layout>
         } />
         <Route path="/contact" element={

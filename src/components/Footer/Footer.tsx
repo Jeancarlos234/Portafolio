@@ -15,6 +15,7 @@
             { label: 'Experiencia', path: '/experience' },
             { label: 'Certificaciones', path: '/certificates' },
             { label: 'Servicios', path: '/services' },
+            { label: 'Tiendas Digitales', path: '/shop' },
             { label: 'Contacto', path: '/contact' },
         ]
         },

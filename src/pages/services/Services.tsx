@@ -14,18 +14,7 @@
     category: string
     }
 
-    interface Platform {
-    id: number
-    name: string
-    description: string
-    logo: string
-    url: string
-    color: string
-    available: boolean
-    }
-
     const Services = () => {
-    const [activeTab, setActiveTab] = useState<'services' | 'products'>('services')
     const [activeFilter, setActiveFilter] = useState<string>('todos')
 
     const categories = [
@@ -344,90 +333,6 @@
         }
     ]
 
-    const platforms: Platform[] = [
-        {
-        id: 1,
-        name: 'Gumroad',
-        description: 'La plataforma más popular para creadores. Vende productos digitales directamente a tu audiencia.',
-        logo: '/img/gumroad.png',
-        url: 'https://sydespatial.gumroad.com/',
-        color: '#FF90E8',
-        available: true
-        },
-        {
-        id: 2,
-        name: 'Ko-fi Shop',
-        description: 'Plataforma amigable para creadores que permite vender productos digitales y recibir donaciones sin comisiones.',
-        logo: '/img/Ko-fi.png',
-        url: 'https://ko-fi.com/sydespatial/shop',
-        color: '#FF5E5B',
-        available: true
-        },
-        {
-        id: 3,
-        name: 'Payhip',
-        description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
-        logo: '/img/Payhip.png',
-        url: 'https://payhip.com/SydeSpatial',
-        color: '#5B4EE4',
-        available: true
-        },
-        {
-        id: 4,
-        name: 'Envato Market',
-        description: 'Marketplace líder para themes, plugins, código y assets creativos de alta calidad.',
-        logo: '/img/Envanto.png',
-        url: 'https://themeforest.net/user/antaresjb',
-        color: '#81B441',
-        available: true
-        },
-        {
-        id: 5,
-        name: 'Creative Market',
-        description: 'Comunidad de diseño con fuentes, gráficos, templates y recursos creativos premium.',
-        logo: '/img/creative-market.png',
-        url: '#',
-        color: '#4BAE4F',
-        available: false
-        },
-        {
-        id: 6,
-        name: 'Product Hunt',
-        description: 'Plataforma para lanzar y descubrir nuevos productos digitales, apps y herramientas.',
-        logo: '/img/product-hunt.png',
-        url: '#',
-        color: '#DA552F',
-        available: false
-        },
-        {
-        id: 7,
-        name: 'Lemonsqueezy',
-        description: 'Alternativa moderna a Gumroad para vender productos digitales con excelente UX.',
-        logo: '/img/lemonsqueezy.png',
-        url: '#',
-        color: '#FFC233',
-        available: false
-        },
-        {
-        id: 8,
-        name: 'Codester',
-        description: 'Marketplace especializado en scripts, themes, plugins y código fuente para desarrolladores web.',
-        logo: '/img/codester.png',
-        url: '#',
-        color: '#FF6B35',
-        available: false
-        },
-        {
-        id: 9,
-        name: 'Itch.io',
-        description: 'La plataforma indie más popular para publicar y vender juegos, assets y herramientas interactivas.',
-        logo: '/img/itch.png',
-        url: '#',
-        color: '#FA5C5C',
-        available: false
-        }
-    ]
-
     const filteredServices = activeFilter === 'todos' 
         ? services 
         : services.filter(service => service.category === activeFilter)
@@ -436,175 +341,79 @@
         <div className={styles.servicesPage}>
         <section className={styles.hero}>
             <div className={styles.heroContent}>
-            <span className={styles.badge}>Servicios & Productos</span>
+            <span className={styles.badge}>Servicios Profesionales</span>
             <h1 className={styles.title}>
-                Soluciones digitales <span className={styles.highlight}>profesionales</span>
+                Soluciones digitales <span className={styles.highlight}>a tu medida</span>
             </h1>
             <p className={styles.subtitle}>
-                Desde desarrollo personalizado hasta productos digitales listos para usar
+                Desarrollo personalizado con las últimas tecnologías para impulsar tu negocio
             </p>
-            
-            <div className={styles.tabs}>
-                <button
-                className={`${styles.tab} ${activeTab === 'services' ? styles.activeTab : ''}`}
-                onClick={() => setActiveTab('services')}
-                >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                </svg>
-                Servicios Personalizados
-                </button>
-                <button
-                className={`${styles.tab} ${activeTab === 'products' ? styles.activeTab : ''}`}
-                onClick={() => setActiveTab('products')}
-                >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
-                    <line x1="7" y1="7" x2="7.01" y2="7"/>
-                </svg>
-                Tiendas Digitales
-                </button>
-            </div>
             </div>
         </section>
 
-        {activeTab === 'services' && (
-            <section className={styles.servicesSection}>
+        <section className={styles.servicesSection}>
             <div className={styles.container}>
-                <div className={styles.filters}>
+            <div className={styles.filters}>
                 {categories.map((category) => (
-                    <button
+                <button
                     key={category.id}
                     className={`${styles.filterButton} ${activeFilter === category.id ? styles.activeFilter : ''}`}
                     onClick={() => setActiveFilter(category.id)}
-                    >
+                >
                     {category.label}
-                    </button>
+                </button>
                 ))}
-                </div>
+            </div>
 
-                <div className={styles.servicesGrid}>
+            <div className={styles.servicesGrid}>
                 {filteredServices.map((service) => (
-                    <div 
+                <div 
                     key={service.id} 
                     className={`${styles.serviceCard} ${service.popular ? styles.popular : ''}`}
-                    >
+                >
                     {service.popular && (
-                        <span className={styles.popularBadge}>Más Popular</span>
+                    <span className={styles.popularBadge}>Más Popular</span>
                     )}
                     <div className={styles.serviceIcon}>{service.icon}</div>
                     <h3 className={styles.serviceTitle}>{service.title}</h3>
                     <p className={styles.serviceDescription}>{service.description}</p>
                     
                     <div className={styles.featuresList}>
-                        {service.features.map((feature, index) => (
+                    {service.features.map((feature, index) => (
                         <div key={index} className={styles.featureItem}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            <span>{feature}</span>
+                        </svg>
+                        <span>{feature}</span>
                         </div>
-                        ))}
+                    ))}
                     </div>
 
                     <div className={styles.serviceFooter}>
-                        <div className={styles.deliveryTime}>
+                    <div className={styles.deliveryTime}>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
                         </svg>
                         {service.deliveryTime}
-                        </div>
-                        <div className={styles.price}>{service.price}</div>
+                    </div>
+                    <div className={styles.price}>{service.price}</div>
                     </div>
                     
                     <Link to="/contact" className={styles.ctaButton}>
-                        Solicitar servicio
+                    Solicitar servicio
                     </Link>
-                    </div>
-                ))}
                 </div>
+                ))}
+            </div>
 
-                {filteredServices.length === 0 && (
+            {filteredServices.length === 0 && (
                 <div className={styles.noResults}>
-                    <p>No hay servicios en esta categoría</p>
+                <p>No hay servicios en esta categoría</p>
                 </div>
-                )}
+            )}
             </div>
-            </section>
-        )}
-
-        {activeTab === 'products' && (
-            <section className={styles.productsSection}>
-            <div className={styles.container}>
-                <div className={styles.productsHeader}>
-                <h2 className={styles.productsTitle}>Mis Tiendas Digitales</h2>
-                <p className={styles.productsSubtitle}>
-                    Explora mis productos en estas plataformas de venta
-                </p>
-                </div>
-
-                <div className={styles.platformsGrid}>
-                {platforms.map((platform) => (
-                    platform.available ? (
-                    <a 
-                        key={platform.id}
-                        href={platform.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.platformCard}
-                    >
-                        <div className={styles.platformIconWrapper}>
-                        <img 
-                            src={platform.logo} 
-                            alt={`${platform.name} logo`} 
-                            className={styles.platformLogo}
-                        />
-                        </div>
-                        
-                        <h3 className={styles.platformName}>{platform.name}</h3>
-                        <p className={styles.platformDescription}>{platform.description}</p>
-
-                        <div className={styles.platformButton}>
-                        Visitar tienda
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                        </div>
-                    </a>
-                    ) : (
-                    <div 
-                        key={platform.id}
-                        className={`${styles.platformCard} ${styles.platformComingSoon}`}
-                    >
-                        <div className={styles.comingSoonBadge}>Próximamente</div>
-                        <div className={styles.platformIconWrapper}>
-                        <img 
-                            src={platform.logo} 
-                            alt={`${platform.name} logo`} 
-                            className={styles.platformLogo}
-                        />
-                        </div>
-                        
-                        <h3 className={styles.platformName}>{platform.name}</h3>
-                        <p className={styles.platformDescription}>{platform.description}</p>
-
-                        <div className={styles.platformButtonDisabled}>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <circle cx="12" cy="12" r="10"/>
-                            <polyline points="12 6 12 12 16 14"/>
-                        </svg>
-                        Próximamente
-                        </div>
-                    </div>
-                    )
-                ))}
-                </div>
-            </div>
-            </section>
-        )}
+        </section>
 
         <section className={styles.cta}>
             <div className={styles.container}>

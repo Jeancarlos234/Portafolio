@@ -1,0 +1,431 @@
+    .storesPage {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+    }
+
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    }
+
+    /* ============ ANIMATIONS ============ */
+    @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+
+    @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+    }
+
+    @keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
+    }
+
+    /* Hero Section */
+    .hero {
+    padding: 120px 0 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    }
+
+    .heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+    }
+
+    .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(59, 130, 246, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #93c5fd;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.6s ease;
+    }
+
+    .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.2;
+    animation: fadeInUp 0.6s ease 0.1s both;
+    }
+
+    .highlight {
+    color: #3b82f6;
+    }
+
+    .subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin: 0 0 40px;
+    animation: fadeInUp 0.6s ease 0.2s both;
+    }
+
+    /* Products Section - Plataformas */
+    .productsSection {
+    padding: 60px 0;
+    position: relative;
+    }
+
+    .productsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    }
+
+    .productsHeader {
+    text-align: center;
+    margin-bottom: 48px;
+    animation: fadeInUp 0.6s ease;
+    }
+
+    .productsTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 12px;
+    position: relative;
+    display: inline-block;
+    }
+
+    .productsTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    border-radius: 2px;
+    }
+
+    .productsSubtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin: 16px 0 0;
+    animation: fadeInUp 0.6s ease 0.1s both;
+    }
+
+    /* Grid de plataformas */
+    .platformsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    }
+
+    /* Tarjeta de plataforma */
+    .platformCard {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeInUp 0.6s ease both;
+    }
+
+    /* Animación escalonada para plataformas */
+    .platformCard:nth-child(1) { animation-delay: 0.1s; }
+    .platformCard:nth-child(2) { animation-delay: 0.15s; }
+    .platformCard:nth-child(3) { animation-delay: 0.2s; }
+    .platformCard:nth-child(4) { animation-delay: 0.25s; }
+    .platformCard:nth-child(5) { animation-delay: 0.3s; }
+    .platformCard:nth-child(6) { animation-delay: 0.35s; }
+    .platformCard:nth-child(7) { animation-delay: 0.4s; }
+    .platformCard:nth-child(8) { animation-delay: 0.45s; }
+    .platformCard:nth-child(9) { animation-delay: 0.5s; }
+
+    .platformCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa, #3b82f6);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+
+    .platformCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(59, 130, 246, 0.12);
+    border-color: #93c5fd;
+    }
+
+    .platformCard:hover::before {
+    opacity: 1;
+    }
+
+    /* Plataforma no disponible */
+    .platformComingSoon {
+    opacity: 0.7;
+    cursor: default;
+    }
+
+    .platformComingSoon:hover {
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    border-color: #e2e8f0 !important;
+    }
+
+    .platformComingSoon::before {
+    display: none !important;
+    }
+
+    .comingSoonBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    animation: pulse 2s infinite;
+    }
+
+    /* Icono/Logo de la plataforma */
+    .platformIconWrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    }
+
+    .platformComingSoon .platformIconWrapper {
+    filter: grayscale(30%);
+    }
+
+    .platformCard:hover .platformIconWrapper {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #93c5fd;
+    }
+
+    .platformLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    }
+
+    .platformComingSoon .platformLogo {
+    opacity: 0.6;
+    }
+
+    .platformCard:hover .platformLogo {
+    transform: scale(1.1);
+    }
+
+    .platformName {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px;
+    transition: color 0.3s ease;
+    }
+
+    .platformCard:hover .platformName {
+    color: #3b82f6;
+    }
+
+    .platformDescription {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    }
+
+    /* Botones de plataforma */
+    .platformButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    }
+
+    .platformButton svg {
+    transition: transform 0.3s ease;
+    }
+
+    .platformCard:hover .platformButton {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+    }
+
+    .platformCard:hover .platformButton svg {
+    transform: translateX(4px);
+    }
+
+    .platformButtonDisabled {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: #e2e8f0;
+    color: #94a3b8;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: not-allowed;
+    width: 100%;
+    justify-content: center;
+    }
+
+    /* CTA Section */
+    .cta {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    animation: fadeInUp 0.6s ease both;
+    }
+
+    .cta h2 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+    }
+
+    .cta p {
+    color: #94a3b8;
+    margin: 0 0 24px;
+    font-size: 1.1rem;
+    }
+
+    .ctaButton {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    }
+
+    .ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+    .platformsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    }
+
+    @media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .platformsGrid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platformsGrid {
+        gap: 20px;
+    }
+    
+    .productsTitle {
+        font-size: 1.8rem;
+    }
+    
+    .platformIconWrapper {
+        width: 80px;
+        height: 80px;
+        padding: 16px;
+    }
+    
+    .hero {
+        padding: 100px 0 40px;
+    }
+    
+    .comingSoonBadge {
+        top: 8px;
+        right: 8px;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .productsHeader {
+        padding: 0 16px;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+    
+    .platformCard {
+        padding: 24px;
+    }
+    }
