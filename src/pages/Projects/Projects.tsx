@@ -69,7 +69,7 @@
         description: 'Tienda online completa con carrito de compras, pasarela de pago y panel de administración.',
         technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
         category: 'Web',
-        liveLink: '#',
+        liveLink: 'https://ecommerce-platform-rho-two.vercel.app/',
         color: '#3b82f6'
         },
         {
