@@ -356,6 +356,24 @@
         },
         {
         id: 2,
+        name: 'Ko-fi Shop',
+        description: 'Plataforma amigable para creadores que permite vender productos digitales y recibir donaciones sin comisiones.',
+        logo: '/img/Ko-fi.png',
+        url: 'https://ko-fi.com/sydespatial/shop',
+        color: '#FF5E5B',
+        available: true
+        },
+        {
+        id: 3,
+        name: 'Payhip',
+        description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
+        logo: '/img/Payhip.png',
+        url: 'https://payhip.com/SydeSpatial',
+        color: '#5B4EE4',
+        available: true
+        },
+        {
+        id: 4,
         name: 'Envato Market',
         description: 'Marketplace líder para themes, plugins, código y assets creativos de alta calidad.',
         logo: '/img/Envanto.png',
@@ -364,7 +382,7 @@
         available: true
         },
         {
-        id: 3,
+        id: 5,
         name: 'Creative Market',
         description: 'Comunidad de diseño con fuentes, gráficos, templates y recursos creativos premium.',
         logo: '/img/creative-market.png',
@@ -373,16 +391,7 @@
         available: false
         },
         {
-        id: 4,
-        name: 'Payhip',
-        description: 'Vende productos digitales sin comisiones. Ideal para cursos, ebooks y software.',
-        logo: '/img/Payhip.png',
-        url: '#',
-        color: '#5B4EE4',
-        available: false
-        },
-        {
-        id: 5,
+        id: 6,
         name: 'Product Hunt',
         description: 'Plataforma para lanzar y descubrir nuevos productos digitales, apps y herramientas.',
         logo: '/img/product-hunt.png',
@@ -391,7 +400,7 @@
         available: false
         },
         {
-        id: 6,
+        id: 7,
         name: 'Lemonsqueezy',
         description: 'Alternativa moderna a Gumroad para vender productos digitales con excelente UX.',
         logo: '/img/lemonsqueezy.png',
@@ -400,21 +409,12 @@
         available: false
         },
         {
-        id: 7,
+        id: 8,
         name: 'Codester',
         description: 'Marketplace especializado en scripts, themes, plugins y código fuente para desarrolladores web.',
         logo: '/img/codester.png',
         url: '#',
         color: '#FF6B35',
-        available: false
-        },
-        {
-        id: 8,
-        name: 'Ko-fi Shop',
-        description: 'Plataforma amigable para creadores que permite vender productos digitales y recibir donaciones sin comisiones.',
-        logo: '/img/Ko-fi.png',
-        url: '#',
-        color: '#FF5E5B',
         available: false
         },
         {
