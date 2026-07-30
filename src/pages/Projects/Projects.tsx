@@ -94,9 +94,9 @@
         id: 8,
         title: 'Sistema de Facturación Electrónica',
         description: 'Plataforma para generación y gestión de facturas electrónicas con reportes financieros.',
-        technologies: ['Laravel', 'React', 'MySQL', 'PDF Generator'],
+        technologies: ['Vite.js', 'React', 'Module css', 'TypeScript'],
         category: 'Web',
-        liveLink: '#',
+        liveLink: 'https://invoice-pro-erp.vercel.app/',
         color: '#3b82f6'
         },
         {
